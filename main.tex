@@ -1,0 +1,161 @@
+% intrinsic size and convergence correlations in weak lensing
+% Basundhara Ghosh, Ruth Durrer, Bjoern Malte Schaefer
+
+\documentclass[a4paper,fleqn,usenatbib]{mnras}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+
+\usepackage{float}
+\usepackage{adjustbox}
+
+\graphicspath{ {images/} }
+
+\def\spirou#1{{\bf #1}}
+\def\foca#1{{\bf #1}}
+\def\ana#1{{\bf #1}}
+\def\robert#1{{\bf #1}}
+
+% --- macros --- %
+\newcommand{\icm}{intra-cluster medium}
+\newcommand{\cmb}{cosmic microwave background}
+
+
+% --- spirou's commands --- %
+\newcommand{\ltsima}{$\; \buildrel < \over \sim \;$}
+\newcommand{\lsim}{\lower.5ex\hbox{\ltsima}}
+\newcommand{\gtsima}{$\; \buildrel > \over \sim \;$}
+\newcommand{\gsim}{\lower.5ex\hbox{\gtsima}}
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\dang}{d_\mathrm{A}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\p}{\mathrm{p}}
+
+\newcommand{\ci}{\mathrm{i}}
+\newcommand{\vecx}{\bmath{x}}
+\newcommand{\geo}{\vecx(\btheta,\chip)}
+\newcommand{\vecl}{\bmath{\ell}}
+\newcommand{\veclp}{\bmath{\ell}^\prime}
+\newcommand{\trace}{\mathrm{tr}}
+\newcommand{\dlp}{(\ell-\lprime)}
+
+\newcommand{\chip}{{\chi^\prime}}
+\newcommand{\chipp}{{\chi^{\prime\prime}}}
+\newcommand{\lprime}{\ell^\prime}
+\newcommand{\dirac}{\delta_D}
+\newcommand{\likeli}{\mathcal{L}}
+\newcommand\BG[1]{\textcolor{red}{#1}}
+
+% --- title --- %
+\title[intrinsic size correlations]
+{Intrinsic and extrinsic shape and size correlations of galaxies in weak lensing data}
+\author[B. Ghosh, R. Durrer, B.M. Sch{\"a}fer]
+{Basundhara Ghosh$^1$, Ruth Durrer$^1$, Bj{\"o}rn Malte Sch{\"a}fer$^2$\thanks{e-mail: bjoern.malte.schaefer@uni-heidelberg.de}\\
+$^1$D{\'e}partment de la Physique Th{\'e}orique, Universit{\'e} de Gen{\`e}ve, 24 quai Ernest Ansermet, 1211 Gen{\`e}ve, Switzerland\\
+$^2$Astronomisches Rechen-Institut, Zentrum f{\"u}r Astronomie der Universit{\"a}t Heidelberg, Philosophenweg 12, 69120 Heidelberg, Germany
+}
+
+
+% --- document --- %
+\begin{document}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\pubyear{2020}
+\maketitle
+\label{firstpage}
+
+
+% --- abstract --- %
+\begin{abstract}
+
+\end{abstract}
+
+
+% --- keywords --- %
+\begin{keywords}
+gravitational lensing: weak -- dark energy -- large-scale structure of Universe.
+\end{keywords}
+
+
+% --- section:  --- %
+\section{introduction}\label{sect_intro}
+In the past few years, gravitational lensing has emerged as a powerful probe for large-scale structures and has been extensively used by galaxy surveys like Dark Energy Survey (DES) (\cite{Abbott:2017wau}) (\BG{more DES papers?}) and others... \BG{mention more}. With upcoming surveys like Euclid (\cite{Amendola:2016saw}) and others.. \BG{mention more} which aim to probe higher redshifts with increased precision, it is becoming more important to make sure that the lensing signal is measured with adequate accuracy. For this, not only do we need to include additional lensing corrections in probes like galaxy-galaxy lensing (\cite{Ghosh:2018nsm}), but also pay attention to systematic effects that contribute to the signal. These include intrinsic alignments, which are astrophysical effects that arise due to environment in which galaxies are formed, as nearby galaxies are subjected to the same tidal shear that determines their shape, size and orientation.\par
+Intrinsic alignments can manifest mainly in two ways: the intrinsic-intrinsic (II) effect and the galaxy-intrinsic (GI) effect. \BG{Explanation (and diagram?) here}\\
+As a result, the observed ellipticity of galaxies is a sum of the normal weak lensing effect (which we will call galaxy-galaxy or GG to be consistent with the nomenclature) and the II and GI effects mentioned above.
+\begin{itemize}
+    \item Talk a bit about tomographic approach and why it is important
+    \item ...
+\end{itemize}
+
+% --- section:  --- %
+\section{shape correlations of galaxies}\label{sect_shapes}
+\begin{itemize}
+    \item $\gamma-\gamma$ spectrum 
+    \item $\gamma-\epsilon$ spectrum
+    \item $\epsilon-\epsilon$ spectrum
+    \item shape noise
+\end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{wip.jpg}
+    \caption{Shape-shape correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\gamma\gamma}(\ell)$,$C_{ij}^{\gamma\epsilon}(\ell)$,$C_{ij}^{\epsilon\epsilon}(\ell)$ and $\sigma_{\epsilon^2}/n$}}
+    \label{fig:shapeshape}
+\end{figure}
+% --- section:  --- %
+\section{size correlations of galaxies}\label{sect_sizes}
+\begin{itemize}
+    \item $\kappa-\kappa$ spectrum 
+    \item $\kappa-s$ spectrum
+    \item $s-s$ spectrum
+    \item size noise
+\end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{wip.jpg}
+    \caption{Size-size correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\kappa\kappa}(\ell)$,$C_{ij}^{\kappa s}(\ell)$,$C_{ij}^{ss}(\ell)$ and $\sigma_{s^2}/n$}}
+    \label{fig:shapeshape}
+\end{figure}
+% --- section:  --- %
+\section{shape-size cross-correlations}\label{sect_cross}
+$$\varmathbb{C}=\begin{pmatrix}
+C_{ij}^{\gamma\gamma}+C_{ij}^{\epsilon\epsilon}+2C_{ij}^{\gamma\epsilon}+\frac{\sigma_{\epsilon^2}}{n} & C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s}   \\
+C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s} & C_{ij}^{\kappa\kappa}+C_{ij}^{ss}+2C_{ij}^{\kappa s}+\frac{\sigma_{s^2}}{n}
+\end{pmatrix}$$
+\BG{We have to establish the fact here that the off-diagonal elements are zero.}
+% --- section:  --- %
+\section{information content of galaxy sizes}\label{sect_fisher}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{wip.jpg}
+    \caption{Fisher ellipses: size only, shape only, size+shape combined, D fixed, LCDM parameters set}
+    \label{fig:fisher}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{wip.jpg}
+    \caption{Fisher ellipses: size only, shape only, size+shape combined, D variable, LCDM parameters set}
+    \label{fig:fisher}
+\end{figure}
+
+% --- section: summary --- %
+\section{summary}\label{sect_summary}
+
+
+
+% --- section: acknowledgements --- %
+\section*{Acknowledgements}
+BG thanks...
+
+
+% --- bibliography --- %
+\bibliographystyle{mnras}
+\bibliography{references}
+
+
+\bsp
+\label{lastpage}
+\end{document}

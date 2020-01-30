@@ -16,8 +16,9 @@
 
 \def\spirou#1{{\bf #1}}
 \def\foca#1{{\bf #1}}
-\def\ana#1{{\bf #1}}
-\def\robert#1{{\bf #1}}
+\def\basundhara#1{{\bf #1}}
+\def\ruth#1{{\bf #1}}
+
 
 % --- macros --- %
 \newcommand{\icm}{intra-cluster medium}
@@ -51,9 +52,10 @@
 \newcommand{\likeli}{\mathcal{L}}
 \newcommand\BG[1]{\textcolor{red}{#1}}
 
+
 % --- title --- %
-\title[intrinsic size correlations]
-{Intrinsic and extrinsic shape and size correlations of galaxies in weak lensing data}
+\title[Intrinsic sizes and shapes of galaxies]
+{Intrinsic and extrinsic correlations of galaxy shapes and sizes in weak lensing data}
 \author[B. Ghosh, R. Durrer, B.M. Sch{\"a}fer]
 {Basundhara Ghosh$^1$, Ruth Durrer$^1$, Bj{\"o}rn Malte Sch{\"a}fer$^2$\thanks{e-mail: bjoern.malte.schaefer@uni-heidelberg.de}\\
 $^1$D{\'e}partment de la Physique Th{\'e}orique, Universit{\'e} de Gen{\`e}ve, 24 quai Ernest Ansermet, 1211 Gen{\`e}ve, Switzerland\\
@@ -71,7 +73,7 @@ $^2$Zentrum f{\"u}r Astronomie der Universit{\"a}t Heidelberg, Astronomisches Re
 
 % --- abstract --- %
 \begin{abstract}
-
+The subject of this paper are shape and size correlations of galaxies due to weak gravitational lensing and due to direct tidal interaction of galaxies with gravitational fields sourced by the cosmic large-scale structure. Setting up a linear intrinsic alignment model that is able to predict intrinsic shape and size correlations in a consistent way we compute the spectra of the intrinsic correlations as well as of the cross-correlations between intrinsic shapes and sizes with the weak gravitational shear and convergence, juxtaposing both types of spectra with extrinsic shapes and sizes correlations caused by lensing. We quantify the observability of the intrinsic shape and size correlations and quantify with the Fisher-formalism how well the alignment parameter can be determined from the Euclid weak lensing survey. Specifically we find a contamination of the weak lensing convergence spectra with an intrinsic size correlation amounting to \spirou{add number}\% over a wide multipole range $\ell=30\ldots300$, with a corresponding cross-correlation exhibiting a sign change, similar to the cross-correlation between weak lensing shear and intrinsic shapes.
 \end{abstract}
 
 
@@ -83,13 +85,19 @@ gravitational lensing: weak -- dark energy -- large-scale structure of Universe.
 
 % --- section:  --- %
 \section{introduction}\label{sect_intro}
-In the past few years, gravitational lensing has emerged as a powerful probe for large-scale structures and has been extensively used by galaxy surveys like Dark Energy Survey (DES) (\cite{Abbott:2017wau}) (\BG{more DES papers?}) and others... \BG{mention more}. With upcoming surveys like Euclid (\cite{Amendola:2016saw}) and others.. \BG{mention more} which aim to probe higher redshifts with increased precision, it is becoming more important to make sure that the lensing signal is measured with adequate accuracy. For this, not only do we need to include additional lensing corrections in probes like galaxy-galaxy lensing (\cite{Ghosh:2018nsm}), but also pay attention to systematic effects that contribute to the signal. These include intrinsic alignments, which are astrophysical effects that arise due to environment in which galaxies are formed, as nearby galaxies are subjected to the same tidal shear that determines their shape, size and orientation.\par
+In the past few years, gravitational lensing has emerged as a powerful probe for large-scale structures and has been extensively used by galaxy surveys like Dark Energy Survey (DES) (\cite{Abbott:2017wau}) (\BG{more DES papers?}) and others... \BG{mention more}. With upcoming surveys like Euclid (\cite{Amendola:2016saw}) and others.. \BG{mention more} which aim to probe higher redshifts with increased precision, it is becoming more important to make sure that the lensing signal is measured with adequate accuracy. For this, not only do we need to include additional lensing corrections in probes like galaxy-galaxy lensing (\cite{Ghosh:2018nsm}), but also pay attention to systematic effects that contribute to the signal. These include intrinsic alignments, which are astrophysical effects that arise due to environment in which galaxies are formed, as nearby galaxies are subjected to the same tidal shear that determines their shape, size and orientation.
+
 Intrinsic alignments can manifest mainly in two ways: the intrinsic-intrinsic (II) effect and the galaxy-intrinsic (GI) effect. \BG{Explanation (and diagram?) here}\\
+
 As a result, the observed ellipticity of galaxies is a sum of the normal weak lensing effect (which we will call galaxy-galaxy or GG to be consistent with the nomenclature) and the II and GI effects mentioned above.
-\begin{itemize}
-    \item Talk a bit about tomographic approach and why it is important
-    \item ...
-\end{itemize}
+
+
+After introducing tidal interactions of elliptical galaxies with their surrounding large-scale structure in Sect.~\ref{sect_tidal}, we compute shape correlations from direct tidal interaction and through gravitational lensing in Sect.~\ref{sect_shapes} as well as the corresponding size correlations in Sect.~\ref{sect_sizes} and the nonzero cross-correlation between the two in Sect.~\ref{sect_cross}. We quantify the information content of each of the correlations and the amount of covariance in Sect.~\ref{sect_fisher}, before discussing our results in Sect.~\ref{sect_summary}. In general we work in the context of a $w$CDM-cosmology with a constant equation of state value of $w$ close to $-1$, and standard values for the cosmological parameters, i.e. $\Omega_m = 0.3$, $\sigma_8 =  0.8$, $h = 0.7$ and $n_s = 0.96$, and a parameterised spectrum for nonlinearly evolving scales.
+
+
+% --- section:  --- %
+\section{tidal interactions of galaxies}\label{sect_tidal}
+
 
 % --- section:  --- %
 \section{shape correlations of galaxies}\label{sect_shapes}
@@ -99,12 +107,16 @@ As a result, the observed ellipticity of galaxies is a sum of the normal weak le
     \item $\epsilon-\epsilon$ spectrum
     \item shape noise
 \end{itemize}
+
+
 \begin{figure}
-    \centering
-    \includegraphics[scale=0.1]{wip.jpg}
-    \caption{Shape-shape correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\gamma\gamma}(\ell)$,$C_{ij}^{\gamma\epsilon}(\ell)$,$C_{ij}^{\epsilon\epsilon}(\ell)$ and $\sigma_{\epsilon^2}/n$}}
-    \label{fig:shapeshape}
+\centering
+%\includegraphics[scale=0.1]{wip.jpg}
+\caption{Shape-shape correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\gamma\gamma}(\ell)$,$C_{ij}^{\gamma\epsilon}(\ell)$,$C_{ij}^{\epsilon\epsilon}(\ell)$ and $\sigma_{\epsilon^2}/n$}}
+\label{fig:shapeshape}
 \end{figure}
+
+
 % --- section:  --- %
 \section{size correlations of galaxies}\label{sect_sizes}
 \begin{itemize}
@@ -113,12 +125,16 @@ As a result, the observed ellipticity of galaxies is a sum of the normal weak le
     \item $s-s$ spectrum
     \item size noise
 \end{itemize}
+
+
 \begin{figure}
-    \centering
-    \includegraphics[scale=0.1]{wip.jpg}
-    \caption{Size-size correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\kappa\kappa}(\ell)$,$C_{ij}^{\kappa s}(\ell)$,$C_{ij}^{ss}(\ell)$ and $\sigma_{s^2}/n$}}
-    \label{fig:shapeshape}
+\centering
+%\includegraphics[scale=0.1]{wip.jpg}
+\caption{Size-size correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\kappa\kappa}(\ell)$,$C_{ij}^{\kappa s}(\ell)$,$C_{ij}^{ss}(\ell)$ and $\sigma_{s^2}/n$}}
+\label{fig:shapeshape}
 \end{figure}
+
+
 % --- section:  --- %
 \section{shape-size cross-correlations}\label{sect_cross}
 $$\varmathbb{C}=\begin{pmatrix}
@@ -126,20 +142,38 @@ C_{ij}^{\gamma\gamma}+C_{ij}^{\epsilon\epsilon}+2C_{ij}^{\gamma\epsilon}+\frac{\
 C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s} & C_{ij}^{\kappa\kappa}+C_{ij}^{ss}+2C_{ij}^{\kappa s}+\frac{\sigma_{s^2}}{n}
 \end{pmatrix}$$
 \BG{We have to establish the fact here that the off-diagonal elements are zero.}
+
+
+
 % --- section:  --- %
-\section{information content of galaxy sizes}\label{sect_fisher}
+\section{information content of shape and size correlations}\label{sect_fisher}
+
 \begin{figure}
-    \centering
-    \includegraphics[scale=0.1]{wip.jpg}
-    \caption{Fisher ellipses: size only, shape only, size+shape combined, D fixed, LCDM parameters set}
-    \label{fig:fisher}
+\centering
+%\includegraphics[scale=0.1]{wip.jpg}
+\caption{Fisher ellipses: size only, shape only, size+shape combined, D fixed, LCDM parameters set}
+\label{fig:fisher}
 \end{figure}
+
+
 \begin{figure}
-    \centering
-    \includegraphics[scale=0.1]{wip.jpg}
-    \caption{Fisher ellipses: size only, shape only, size+shape combined, D variable, LCDM parameters set}
-    \label{fig:fisher}
+\centering
+%\includegraphics[scale=0.1]{wip.jpg}
+\caption{Fisher ellipses: size only, shape only, size+shape combined, D variable, LCDM parameters set}
+\label{fig:fisher}
 \end{figure}
+
+
+\begin{table}
+\center
+\begin{tabular}{cc}
+\hline\hline\\
+\hline
+\end{tabular}
+\caption{Statistical precision $\sigma_D$ for measuring the alignment parameter $D$ of the linear alignment model.}
+\label{tab_precision}
+\end{table}
+
 
 % --- section: summary --- %
 \section{summary}\label{sect_summary}

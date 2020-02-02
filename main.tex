@@ -198,23 +198,25 @@ C^{\phi_A\psi_B}_{abij}(\ell) =
 \section{shape correlations of galaxies}\label{sect_shapes}
 Now, the decomposition with Pauli-matrices makes it possible to write down all ellipticity spectra as contractions of the the possible spectra of the source terms, for lensing,
 \begin{equation}
-C
+C^{\gamma\gamma}_{AB}(\ell) = \frac{1}{4}
+\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\psi_A\psi_B}_{abij}(\ell)
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
+C^{\epsilon\epsilon}_{AB}(\ell) = \frac{1}{4}
+\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\phi_A\phi_B}_{abij}(\ell)
 \end{equation}
 and for the cross-correlation between the two,
 \begin{equation}
+C^{\epsilon\gamma}_{AB}(\ell) = \frac{1}{4}
+\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\phi_A\psi_B}_{abij}(\ell)
 \end{equation}
 
 
-\begin{itemize}
-    \item $\gamma-\gamma$ spectrum 
-    \item $\gamma-\epsilon$ spectrum
-    \item $\epsilon-\epsilon$ spectrum
-    \item shape noise
-\end{itemize}
-
+The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}.
 
 \begin{figure}
 \centering
@@ -228,23 +230,23 @@ and for the cross-correlation between the two,
 \section{size correlations of galaxies}\label{sect_sizes}
 In a similar manner like in the previous section, one obtains the size spectra from contracting the possible spectra of the source terms, for lensing,
 \begin{equation}
-C
+C^{\kappa\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\psi_A\psi_B}_{abij}(\ell)
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
+C^{s\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\phi_A\psi_B}_{abij}(\ell)
 \end{equation}
 and again, for the cross-correlation between the two,
 \begin{equation}
+C^{ss}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\phi_A\phi_B}_{abij}(\ell)
+\end{equation}
+In the estimation process, there is a constant, diagonal noise contribution
+\begin{equation}
+N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}
 \end{equation}
 
 
-\begin{itemize}
-    \item $\kappa-\kappa$ spectrum 
-    \item $\kappa-s$ spectrum
-    \item $s-s$ spectrum
-    \item size noise
-\end{itemize}
-
+Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey.
 
 \begin{figure}
 \centering
@@ -253,22 +255,24 @@ and again, for the cross-correlation between the two,
 \label{fig:shapeshape}
 \end{figure}
 
+
 \spirou{add: consistency relations}
 
+\spirou{add: cross-terms between shape and size are zero}
 
-
-% --- section:  --- %
-\section{shape-size cross-correlations}\label{sect_cross}
-$$\varmathbb{C}=\begin{pmatrix}
-C_{ij}^{\gamma\gamma}+C_{ij}^{\epsilon\epsilon}+2C_{ij}^{\gamma\epsilon}+\frac{\sigma_{\epsilon^2}}{n} & C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s}   \\
-C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s} & C_{ij}^{\kappa\kappa}+C_{ij}^{ss}+2C_{ij}^{\kappa s}+\frac{\sigma_{s^2}}{n}
-\end{pmatrix}$$
 \BG{We have to establish the fact here that the off-diagonal elements are zero.}
 
 
 
 % --- section:  --- %
 \section{information content of shape and size correlations}\label{sect_fisher}
+
+\spirou{construction of the covariance}
+
+$$\varmathbb{C}=\begin{pmatrix}
+C_{ij}^{\gamma\gamma}+C_{ij}^{\epsilon\epsilon}+2C_{ij}^{\gamma\epsilon}+\frac{\sigma_{\epsilon^2}}{n} & C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s}   \\
+C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s} & C_{ij}^{\kappa\kappa}+C_{ij}^{ss}+2C_{ij}^{\kappa s}+\frac{\sigma_{s^2}}{n}
+\end{pmatrix}$$
 
 \begin{figure}
 \centering

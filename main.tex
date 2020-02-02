@@ -199,20 +199,20 @@ C^{\varphi_A\psi_B}_{abij}(\ell) =
 Now, the decomposition with Pauli-matrices makes it possible to write down all ellipticity spectra as contractions of the the possible spectra of the source terms, for lensing,
 \begin{equation}
 C^{\gamma\gamma}_{AB}(\ell) = \frac{1}{4}
-\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right),
-C^{\psi_A\psi_B}_{abij}(\ell)
+\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\psi_A\psi_B}_{abij}(\ell),
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
 C^{\epsilon\epsilon}_{AB}(\ell) = \frac{1}{4}
-\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right),
-C^{\varphi_A\varphi_B}_{abij}(\ell)
+\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\varphi_A\varphi_B}_{abij}(\ell),
 \end{equation}
 and for the cross-correlation between the two,
 \begin{equation}
 C^{\epsilon\gamma}_{AB}(\ell) = \frac{1}{4}
-\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right).
-C^{\varphi_A\psi_B}_{abij}(\ell)
+\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\varphi_A\psi_B}_{abij}(\ell).
 \end{equation}
 A measurement of the shape correlations is limited by a Poissonian shape noise contribution,
 \begin{equation}
@@ -264,8 +264,6 @@ Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as the
 
 \spirou{add: cross-terms between shape and size are zero}
 
-\BG{We have to establish the fact here that the off-diagonal elements are zero.}
-
 
 
 % --- section:  --- %
@@ -278,6 +276,20 @@ C_{ij}^{\gamma\gamma}+C_{ij}^{\epsilon\epsilon}+2C_{ij}^{\gamma\epsilon}+\frac{\
 C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s} & C_{ij}^{\kappa\kappa}+C_{ij}^{ss}+2C_{ij}^{\kappa s}+\frac{\sigma_{s^2}}{n}
 \end{pmatrix}$$
 
+The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the form
+\begin{equation}
+F_{\mu\nu} = \sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)
+\end{equation}
+where we implicitly assume a full sky coverage by having independent Fourier-modes, but scale down the Fisher-matrix with the fraction $f_\mathrm{sky}=0.5$ for the Euclid survey.
+
+As the shape and size spectra are equal and carry the identical dependence on cosmological parameters, as they are essentially contractions of the same source terms for lensing, intrinsic alignments and their cross-correlations, the covariance matrix of the combined measurement is identical to that of an individual measurement with a rescaled noise term,
+\begin{equation}
+\frac{1}{\sigma^2_\mathrm{tot}} = \frac{1}{\sigma^2_\mathrm{shape}} + \frac{1}{\sigma^2_\mathrm{size}}.
+\end{equation}
+
+
+Fig.~\ref{fig:fisher} shows a constraints on a $w$CDM-cosmology from galaxy shapes and galaxy sizes.
+
 \begin{figure}
 \centering
 %\includegraphics[scale=0.1]{wip.jpg}
@@ -286,11 +298,13 @@ C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon
 \end{figure}
 
 
+Fig.~\ref{fig:fisher2} illustrates, how much information is added to the lensing data by including intrinsic alignments, again separated by galaxy shape spectra, size spectra and both combined.
+
 \begin{figure}
 \centering
 %\includegraphics[scale=0.1]{wip.jpg}
 \caption{Fisher ellipses: size only, shape only, size+shape combined, D variable, LCDM parameters set}
-\label{fig:fisher}
+\label{fig:fisher2}
 \end{figure}
 
 

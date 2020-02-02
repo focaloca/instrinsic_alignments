@@ -104,7 +104,7 @@ After introducing tidal interactions of elliptical galaxies with their surroundi
 
 
 % --- section:  --- %
-\section{tidal interactions of galaxies}\label{sect_tidal}
+\section{tidal interactions of galaxies and gravitational lensing}\label{sect_tidal}
 In a simplified way one can imagine elliptical galaxies as a stellar component in virial equilibrium with a velocity dispersion $\sigma^2$, filling the gravitational potential. If the gravitational potential is distorted by external fields as the galaxy is not an isolated object, the equipotential contours get distorted and correspondingly, the stellar component reacts and galaxy assumes a different shape. To lowest order, the change in shape takes place along the principal axes of the tidal shear tensor $\partial_i\partial_j\Phi$, which is defined as the second derivatives of the gravitational potential $\Phi$. Consequently, one observes a complex ellipticity $\epsilon$,
 \begin{equation}
 \epsilon = \epsilon_+ + \ci\epsilon_\times \propto 
@@ -114,9 +114,9 @@ with a constant of proportionality $D$, which describes the elasticity of the st
 \begin{equation}
 \varphi_{A,ab} = \partial_a\partial_b\varphi_A
 \quad\mathrm{with}\quad
-\varphi_A = \int\dd\chi\:p_A(\chi)\chi^2\frac{c}{H(\chi)}\:\Phi = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
+\varphi_A = \int\dd\chi\:p_A(z(\chi))\frac{c}{H(\chi)}\:\Phi = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
 \end{equation}
-with the Hubble-function $H(\chi)$. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\varphi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
+with the Hubble-function $H(\chi)$. The angular derivatives $\partial_a$ are related to the spatial derivatives $\partial_x$ through $\partial_a = \chi\partial_x$, with $x=\theta\chi$ in the small-angle approximation. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\varphi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
 \begin{equation}
 \varphi_{A,ab} = s_A\sigma^{0}_{ab} + \epsilon_{+,A}\sigma^{(1)}_{ab} + \epsilon_{\times,A}\sigma^{(3)}_{ab},
 \mathrm{~with}\quad
@@ -264,6 +264,8 @@ Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as the
 
 \spirou{add: cross-terms between shape and size are zero}
 
+\spirou{add: show proof, statistically isotropic fields}
+
 
 
 % --- section:  --- %
@@ -309,13 +311,14 @@ Fig.~\ref{fig:fisher2} illustrates, how much information is added to the lensing
 
 
 \begin{table}
-\center
+\begin{center}
 \begin{tabular}{cc}
 \hline\hline\\
 \hline
 \end{tabular}
 \caption{Statistical precision $\sigma_D$ for measuring the alignment parameter $D$ of the linear alignment model.}
 \label{tab_precision}
+\end{center}
 \end{table}
 
 

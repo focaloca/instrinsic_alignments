@@ -105,10 +105,109 @@ After introducing tidal interactions of elliptical galaxies with their surroundi
 
 % --- section:  --- %
 \section{tidal interactions of galaxies}\label{sect_tidal}
+In a simplified way one can imagine elliptical galaxies as a stellar component in virial equilibrium with a velocity dispersion $\sigma^2$, filling the gravitational potential. If the gravitational potential is distorted by external fields as the galaxy is not an isolated object, the equipotential contours get distorted and correspondingly, the stellar component reacts and galaxy assumes a different shape. To lowest order, the change in shape takes place along the principal axes of the tidal shear tensor $\partial_i\partial_j\Phi$, which is defined as the second derivatives of the gravitational potential $\Phi$. Consequently, one observes a complex ellipticity $\epsilon$,
+\begin{equation}
+\epsilon = \epsilon_+ + \ci\epsilon_\times \propto 
+(\partial_x\partial_x-\partial_y\partial_y)\Phi +2\ci\partial_x\partial_y\Phi
+\end{equation}
+with a constant of proportionality $D$, which describes the elasticity of the stellar component: As shown by \spirou{add reference}, in is inversely proportional to the velocity dispersion $\sigma^2$. With many galaxies in a tomographic bin $A$ with a suitable, normalised redshift distribution $p_A(z)\dd z$ one can define the line of sight-averaged ellipticity from second angular derivatives of the weighted projection of the potential $\Phi$:
+\begin{equation}
+\phi_{A,ab} = \partial_a\partial_b\phi_A
+\quad\mathrm{with}\quad
+\phi_A = \int\dd\chi\:p_A(\chi)\chi^2\frac{c}{H(\chi)}\:\Phi = \int\dd\chi\:W_{\phi,A}(\chi)\:\Phi,
+\end{equation}
+with the Hubble-function $H(\chi)$. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\phi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
+\begin{equation}
+\phi_{A,ab} = s_A\sigma^{0}_{ab} + \epsilon_{+,A}\sigma^{(1)}_{ab} + \epsilon_{\times,A}\sigma^{(3)}_{ab},
+\mathrm{~with}\quad
+\sigma^{(0)} = \left(
+\begin{array}{cc}
+1 & 0 \\ 0 & 1
+\end{array}
+\right),
+\sigma^{(1)} = \left(
+\begin{array}{cc}
+1 & 0 \\ 0 & -1
+\end{array}
+\right),
+\mathrm{~and}\quad
+\sigma^{(3)} = \left(
+\begin{array}{cc}
+0 & 1 \\ 1 & 0
+\end{array},
+\right)
+\end{equation}
+where three components are sufficient because of the symmetry $\phi_{A,ab} = \phi_{A,ba}$. Using two properties of the Pauli-matrices $\sigma_{ab}^{(n)}$, namely $\sigma_{ab}^{(m)}\sigma_{bc}^{(n)} = \delta_{mn}\sigma^{(0)}_{ac} + \epsilon_{mno}\sigma^{(o)}_{ac}$, and their tracelessness $\sigma^{(m)}_{aa} = 0$, it is possible to invert the last relation and to obtain the expansion coefficients,
+\begin{equation}
+s_A = \frac{1}{2}\phi_{A,ab}\sigma^{(0)}_{ab},
+\quad
+\epsilon_{+,A} = \frac{1}{2}\phi_{A,ab}\sigma^{(1)}_{ab},
+\mathrm{~and}\quad
+\epsilon_{\times,A} = \frac{1}{2}\phi_{A,ab}\sigma^{(3)}_{ab}.
+\end{equation}
+
+This path is motivated by the weak lensing shear $\gamma$, which results from the tensor $\psi_{B,ij}$ containing the second derivatives of the weak lensing potential $\psi_B$,
+\begin{equation}
+\psi_{B,ij} = \partial_i\partial_j\psi_B
+\quad\mathrm{with}\quad
+\psi_B = \int\dd\chi\:\Phi = \int\dd\chi\:W_{\psi,B}(\chi)\Phi.
+\end{equation}
+Again, there is an analogous decomposition
+\begin{equation}
+\psi_{B,ij} = \kappa_B\sigma^{(0)}_{ij} + \gamma_{+,B}\sigma^{(1)}_{ij} +\gamma_{\times,B}\sigma^{(3)}_{ij}
+\end{equation}
+with the analogous inversion,
+\begin{equation}
+\kappa_B = \frac{1}{2}\psi_{B,ij}\sigma^{(0)}_{ij},
+\quad
+\gamma_{+,B} = \frac{1}{2}\psi_{B,ij}\sigma^{(1)}_{ij},
+\mathrm{~and}\quad
+\gamma_{\times,B} = \frac{1}{2}\psi_{B,ij}\sigma^{(3)}_{ij}.
+\end{equation}
+
+This implies that the statistics of all modes of the shape and size field can be described by spectra of the source fields, which in turn are given by a Limber-projection. Specifically, the spectrum of $\phi_{A,ab}$ reads
+\begin{equation}
+\bra\phi_{A,ab}(\bmath\ell)\phi_{B,ij}^*(\bmath\ell^\prime)\ket = 
+(2\pi)^2\dirac(\bmath\ell-\bmath\ell^\prime)\:C^{\phi_A\phi_B}_{abij}(\ell)
+\quad\mathrm{with}\quad
+C^{\phi_A\phi_B}_{abij}(\ell) = 
+\ell_a\ell_b\ell_i\ell_j\:\int\frac{\dd\chi}{\chi^2}\:W_{\phi,A}(\chi)W_{\phi,B}(\chi)\:P_{\Phi\Phi}(k = \ell/\chi),
+\end{equation}
+similarly, one obtains for the the field $\psi_{B,ij}$,
+\begin{equation}
+\bra\psi_{A,ab}(\bmath\ell)\psi_{B,ij}^*(\bmath\ell\prime)\ket = 
+(2\pi)^2\dirac(\bmath\ell-\bmath\ell^\prime)\:C^{\psi_A\psi_B}_{abij}(\ell)
+\quad\mathrm{with}\quad
+C^{\psi_A\psi_B}_{abij}(\ell) = 
+\ell_a\ell_b\ell_i\ell_j\:\int\frac{\dd\chi}{\chi^2}\:W_{\psi,A}(\chi)W_{\psi,B}(\chi)\:P_{\Phi\Phi}(k = \ell/\chi),
+\end{equation}
+and finally for their cross-correlation,
+\begin{equation}
+\bra\phi_{A,ab}(\bmath\ell)\psi_{B,ij}^*(\bmath\ell^\prime)\ket =
+(2\pi)^2\dirac(\bmath\ell-\bmath\ell^\prime)\:C^{\phi_A\psi_B}_{abij}(\ell)
+\quad\mathrm{with}\quad
+C^{\phi_A\psi_B}_{abij}(\ell) =
+\ell_a\ell_b\ell_i\ell_j\:\int\frac{\dd\chi}{\chi^2}\:W_{\phi,A}(\chi)W_{\psi,B}(\chi)\:P_{\Phi\Phi}(k = \ell/\chi).
+\end{equation}
+
+
+\spirou{add: Jeans-model}
 
 
 % --- section:  --- %
 \section{shape correlations of galaxies}\label{sect_shapes}
+Now, the decomposition with Pauli-matrices makes it possible to write down all ellipticity spectra as contractions of the the possible spectra of the source terms, for lensing,
+\begin{equation}
+C
+\end{equation}
+for intrinsic alignments,
+\begin{equation}
+\end{equation}
+and for the cross-correlation between the two,
+\begin{equation}
+\end{equation}
+
+
 \begin{itemize}
     \item $\gamma-\gamma$ spectrum 
     \item $\gamma-\epsilon$ spectrum
@@ -127,6 +226,18 @@ After introducing tidal interactions of elliptical galaxies with their surroundi
 
 % --- section:  --- %
 \section{size correlations of galaxies}\label{sect_sizes}
+In a similar manner like in the previous section, one obtains the size spectra from contracting the possible spectra of the source terms, for lensing,
+\begin{equation}
+C
+\end{equation}
+for intrinsic alignments,
+\begin{equation}
+\end{equation}
+and again, for the cross-correlation between the two,
+\begin{equation}
+\end{equation}
+
+
 \begin{itemize}
     \item $\kappa-\kappa$ spectrum 
     \item $\kappa-s$ spectrum
@@ -141,6 +252,9 @@ After introducing tidal interactions of elliptical galaxies with their surroundi
 \caption{Size-size correlations as a function of $\ell$. \BG{To plot: $C_{ij}^{\kappa\kappa}(\ell)$,$C_{ij}^{\kappa s}(\ell)$,$C_{ij}^{ss}(\ell)$ and $\sigma_{s^2}/n$}}
 \label{fig:shapeshape}
 \end{figure}
+
+\spirou{add: consistency relations}
+
 
 
 % --- section:  --- %

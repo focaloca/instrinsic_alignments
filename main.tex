@@ -76,7 +76,7 @@ $^2$Zentrum f{\"u}r Astronomie der Universit{\"a}t Heidelberg, Astronomisches Re
 
 % --- abstract --- %
 \begin{abstract}
-The subject of this paper are shape and size correlations of galaxies due to weak gravitational lensing and due to direct tidal interaction of elliptical galaxies with gravitational fields sourced by the cosmic large-scale structure. Setting up a linear intrinsic alignment model that is able to predict intrinsic shape and size correlations in a consistent way we compute the spectra of the intrinsic correlations as well as of the cross-correlations between intrinsic shapes and sizes with weak gravitational shear and convergence, juxtaposing both types of spectra with extrinsic shapes and sizes correlations caused by lensing. We quantify the observability of the intrinsic shape and size correlations and quantify \BG{(maybe we shouldn't use 'quantify' twice?)} with the Fisher-formalism how well the alignment parameter can be determined from the Euclid weak lensing survey. Specifically, we find a contamination of the weak lensing convergence spectra with an intrinsic size correlation amounting to \spirou{add number}\% over a wide multipole range $\ell=30\ldots300$, with a corresponding cross-correlation exhibiting a sign change, similar to the cross-correlation between weak lensing shear and intrinsic shapes. Quantifying the information content of size correlations in addition to shape correlations shows that bounds can be improved by \spirou{add number}\% for a $w$CDM-cosmology, and that intrinsic correlations decrease the sensitivity of weak lensing due to the negative sign of the cross-correlations by \spirou{add number}. A determination of the alignment parameter yields an precision of $\sigma_D=$\spirou{add number} forecasted for Euclid.
+The subject of this paper are shape and size correlations of galaxies due to weak gravitational lensing and due to direct tidal interaction of elliptical galaxies with gravitational fields sourced by the cosmic large-scale structure. Setting up a linear intrinsic alignment model that is able to predict intrinsic shape and size correlations in a consistent way we compute the spectra of the intrinsic correlations as well as of the cross-correlations between intrinsic shapes and sizes with weak gravitational shear and convergence, juxtaposing both types of spectra with extrinsic shapes and sizes correlations caused by lensing. We quantify the observability of the intrinsic shape and size correlations and estimate with the Fisher-formalism how well the alignment parameter can be determined from the Euclid weak lensing survey. Specifically, we find a contamination of the weak lensing convergence spectra with an intrinsic size correlation amounting to \spirou{add number}\% over a wide multipole range $\ell=30\ldots300$, with a corresponding cross-correlation exhibiting a sign change, similar to the cross-correlation between weak lensing shear and intrinsic shapes. Quantifying the information content of size correlations in addition to shape correlations shows that bounds can be improved by \spirou{add number}\% for a $w$CDM-cosmology, and that intrinsic correlations decrease the sensitivity of weak lensing due to the negative sign of the cross-correlations by \spirou{add number}. A determination of the alignment parameter yields an precision of $\sigma_D=$\spirou{add number} forecasted for Euclid.
 \end{abstract}
 
 
@@ -118,19 +118,24 @@ with a constant of proportionality $D$, which describes the elasticity of the st
 \end{equation}
 with the Hubble-function $H(\chi)$. The angular derivatives $\partial_a$ are related to the spatial derivatives $\partial_x$ through $\partial_a = \chi\partial_x$, with $x=\theta\chi$ in the small-angle approximation. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\varphi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
 \begin{equation}
-\varphi_{A,ab} = s_A\sigma^{0}_{ab} + \epsilon_{+,A}\sigma^{(1)}_{ab} + \epsilon_{\times,A}\sigma^{(3)}_{ab},
+\varphi_{A,ab} = s_A\sigma^{(0)}_{ab} + \epsilon_{+,A}\sigma^{(1)}_{ab} + \epsilon_{\times,A}\sigma^{(3)}_{ab},
 \mathrm{~with}\quad
 \sigma^{(0)} = \left(
 \begin{array}{cc}
 1 & 0 \\ 0 & 1
 \end{array}
-\right),
+\right),~
 \sigma^{(1)} = \left(
 \begin{array}{cc}
 1 & 0 \\ 0 & -1
 \end{array}
+\right),~
+\sigma^{(2)} = \left(
+\begin{array}{cc}
+0 & 1 \\ -1 & 0
+\end{array}
 \right),
-\mathrm{~and}\quad
+\mathrm{~and~}
 \sigma^{(3)} = \left(
 \begin{array}{cc}
 0 & 1 \\ 1 & 0

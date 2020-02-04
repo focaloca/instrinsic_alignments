@@ -193,6 +193,8 @@ C^{\varphi_A\psi_B}_{abij}(\ell) =
 
 \spirou{add: Jeans-model}
 
+\spirou{necessity for two different alignment parameters}
+
 
 % --- section:  --- %
 \section{shape correlations of galaxies}\label{sect_shapes}
@@ -220,7 +222,8 @@ N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar
 \end{equation}
 
 
-The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}.
+The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}. The negative cross-correlation between lensing and intrinsic alignments in taken care of by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlation, which are proportional to $D^2$ and therefore positive.
+
 
 \begin{figure}
 \centering
@@ -250,7 +253,8 @@ N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{
 \end{equation}
 
 
-Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey.
+Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. Similarly to the shape-spectra discussed in the previous section, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly.
+
 
 \begin{figure}
 \centering
@@ -266,6 +270,7 @@ Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as the
 
 \spirou{add: show proof, statistically isotropic fields}
 
+\spirou{add: total number of nonzero spectra}
 
 
 % --- section:  --- %
@@ -280,9 +285,14 @@ C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon
 
 The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the form
 \begin{equation}
-F_{\mu\nu} = \sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)
+F_{\mu\nu} = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)
 \end{equation}
-where we implicitly assume a full sky coverage by having independent Fourier-modes, but scale down the Fisher-matrix with the fraction $f_\mathrm{sky}=0.5$ for the Euclid survey.
+where we implicitly assume a full sky coverage by having independent Fourier-modes, but scale down the Fisher-matrix with the fraction $f_\mathrm{sky} = 0.5$ for the Euclid survey. Similarly, we define the signal to noise ratio $\Sigma$,
+\begin{equation}
+\Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}SC^{-1}S\right),
+\end{equation}
+with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$.
+
 
 As the shape and size spectra are equal and carry the identical dependence on cosmological parameters, as they are essentially contractions of the same source terms for lensing, intrinsic alignments and their cross-correlations, the covariance matrix of the combined measurement is identical to that of an individual measurement with a rescaled noise term,
 \begin{equation}
@@ -324,7 +334,11 @@ Fig.~\ref{fig:fisher2} illustrates, how much information is added to the lensing
 
 % --- section: summary --- %
 \section{summary}\label{sect_summary}
-
+The subject of our investigation were extrinsic and intrinsic shape and size correlations of galaxies due to weak gravitational lensing and intrinsic alignments. 
+\begin{itemize}
+\item{}
+\end{itemize}
+We would like to investigate the usability of both types of shape and size spectra for designing specific tests of gravity, for instance for Vaishtein-type screening mechanisms, which would manifest themselves in differences between the intrinsic and extrinsic shape and size spectra.
 
 
 % --- section: acknowledgements --- %

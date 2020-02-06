@@ -96,7 +96,7 @@ Elliptical galaxies, on the other hand, are thought to acquire shape correlation
 
 While intrinsic alignments refer to a physical change of the appearance of the galaxies, there is an analogous deformation effect on the shape of the light bundle emanating from a galaxy by gravitational lensing. To lowest order, both effects depend on tidal gravitational field which suggests that the effects must be correlated. In fact, cross-correlations between the physical change in shape and the apparent change in shape are predicted to be nonzero for elliptical galaxies, and to be more exact, should in fact be negative as galaxies align themselves radially with a large structure while lensing generates a tangential alignment. As a result, ellipticity correlations of galaxies is a sum of the conventional weak lensing (referred to as GG), the intrinsic alignment (or II) and the cross-correlation between the two (called GI).
 
-There should be analogous effects of the size of an elliptical galaxy due to tidal gravitational fields: In gravitational lensing the light bundle can be isotropically enlarged, i.e. changed in size while the shape is conserved: This nonzero convergence is caused by the trace of the tidal shear field. Similarly, the size of an elliptical galaxy would physically change for a fixed velocity dispersion if the trace of the tidal shear field is nonzero, or equivalently, if it resides in an overdense or underdense region. An underdense region with density contrast $\delta < 0$ would source a gravitational potential $\Phi$ through the Poisson-equation $\Delta\Phi/c^2 = 3\Omega_m/(2\chi_H^2)\delta$, with the Hubble-distance $\chi_H = c/H_0$, such that the eigenvalues of $\partial_i\partial_j$ would be negative, stretching the galaxy to a larger size.
+There should be analogous effects of the size of an elliptical galaxy due to tidal gravitational fields: In gravitational lensing the light bundle can be isotropically enlarged, i.e. changed in size while the shape is conserved: This nonzero convergence is caused by the trace of the tidal shear field. Similarly, the size of an elliptical galaxy would physically change for a fixed velocity dispersion if the trace of the tidal shear field is nonzero, or equivalently, if it resides in an overdense or underdense region. An underdense region with density contrast $\delta < 0$ would source a gravitational potential $\Phi$ through the Poisson-equation $\Delta\Phi/c^2 = 3\Omega_m/(2\chi_H^2)\delta$, with the Hubble-distance $\chi_H = c/H_0$, such that the eigenvalues of $\partial_i\partial_j\Phi$ would be negative, stretching the galaxy to a larger size.
 
 The motivation of our paper are exactly these correlations between the sizes of elliptical galaxies as they would be predicted by a linear alignment model as a consequence of the trace $\Delta\Phi$ of the tidal shear tensor $\partial_i\partial_j\Phi$ being nonzero. These intrinsic size correlations would be generated in complete analogy to intrinsic shape correlations caused by the traceless part of the tidal shear, and would contaminate measurements of weak lensing convergence correlations in the same way as intrinsic shape correlations are a nuisance to the weak lensing shear.
 
@@ -105,7 +105,7 @@ After introducing tidal interactions of elliptical galaxies with their surroundi
 
 % --- section:  --- %
 \section{tidal interactions of galaxies and gravitational lensing}\label{sect_tidal}
-In a simplified way one can imagine elliptical galaxies as a stellar component in virial equilibrium with a velocity dispersion $\sigma^2$, filling the gravitational potential. If the gravitational potential is distorted by external fields as the galaxy is not an isolated object, the equipotential contours get distorted and correspondingly, the stellar component reacts and galaxy assumes a different shape. To lowest order, the change in shape takes place along the principal axes of the tidal shear tensor $\partial_i\partial_j\Phi$, which is defined as the second derivatives of the gravitational potential $\Phi$. Consequently, one observes a complex ellipticity $\epsilon$,
+In a simplified way one can imagine elliptical galaxies as a stellar component in virial equilibrium with a velocity dispersion $\sigma^2$, filling the gravitational potential. If the gravitational potential is distorted by external fields as the galaxy is not an isolated object, the equipotential contours get distorted correspondingly and the stellar component reacts and galaxy assumes a different shape. To lowest order, the change in shape takes place along the principal axes of the tidal shear tensor $\partial_i\partial_j\Phi$, which is defined as the second derivatives of the gravitational potential $\Phi$. Consequently, one observes a complex ellipticity $\epsilon$,
 \begin{equation}
 \epsilon = \epsilon_+ + \ci\epsilon_\times \propto 
 (\partial_x\partial_x-\partial_y\partial_y)\Phi +2\ci\partial_x\partial_y\Phi
@@ -114,33 +114,33 @@ with a constant of proportionality $D$, which describes the elasticity of the st
 \begin{equation}
 \varphi_{A,ab} = \partial_a\partial_b\varphi_A
 \quad\mathrm{with}\quad
-\varphi_A = \int\dd\chi\:p_A(z(\chi))\frac{c}{H(\chi)}\:\Phi = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
+\varphi_A = \int\dd\chi\:p_A(z(\chi))\frac{\dd z}{\dd\chi}\frac{D_+}{a}\:\Phi = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
 \end{equation}
-with the Hubble-function $H(\chi)$. The angular derivatives $\partial_a$ are related to the spatial derivatives $\partial_x$ through $\partial_a = \chi\partial_x$, with $x=\theta\chi$ in the small-angle approximation. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\varphi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
+with the Hubble-function $H(\chi)/c = \dd z/\dd\chi$ which originates from the transformation of the redshift distribution. The angular derivatives $\partial_a$ are related to the spatial derivatives $\partial_x$ through $\partial_a = \chi\partial_x$, with $x=\theta\chi$ in the small-angle approximation. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\varphi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
 \begin{equation}
 \varphi_{A,ab} = s_A\sigma^{(0)}_{ab} + \epsilon_{+,A}\sigma^{(1)}_{ab} + \epsilon_{\times,A}\sigma^{(3)}_{ab},
 \mathrm{~with}\quad
 \sigma^{(0)} = \left(
 \begin{array}{cc}
-1 & 0 \\ 0 & 1
++1 & 0 \\ 0 & +1
 \end{array}
 \right),~
 \sigma^{(1)} = \left(
 \begin{array}{cc}
-1 & 0 \\ 0 & -1
++1 & 0 \\ 0 & -1
 \end{array}
 \right),~
 \sigma^{(2)} = \left(
 \begin{array}{cc}
-0 & 1 \\ -1 & 0
+0 & +1 \\ -1 & 0
 \end{array}
 \right),
 \mathrm{~and~}
 \sigma^{(3)} = \left(
 \begin{array}{cc}
-0 & 1 \\ 1 & 0
-\end{array},
-\right)
+0 & +1 \\ +1 & 0
+\end{array}
+\right),
 \end{equation}
 where three components are sufficient because of the symmetry $\varphi_{A,ab} = \varphi_{A,ba}$. Using two properties of the Pauli-matrices $\sigma_{ab}^{(n)}$, namely $\sigma_{ab}^{(l)}\sigma_{bc}^{(m)} = \delta_{lm}\sigma^{(0)}_{ac} + \epsilon_{lmn}\sigma^{(n)}_{ac}$, and their tracelessness $\sigma^{(m)}_{aa} = 0$, it is possible to invert the last relation and to obtain the expansion coefficients,
 \begin{equation}
@@ -155,9 +155,13 @@ This path is motivated by the weak lensing shear $\gamma$, which results from th
 \begin{equation}
 \psi_{B,ij} = \partial_i\partial_j\psi_B
 \quad\mathrm{with}\quad
-\psi_B = \int\dd\chi\:\Phi = \int\dd\chi\:W_{\psi,B}(\chi)\Phi.
+\psi_B = 2\int\dd\chi\:\frac{G_B(\chi)}{\chi}\frac{D_+}{a}\Phi = \int\dd\chi\:W_{\psi,B}(\chi)\Phi,
 \end{equation}
-Again, there is an analogous decomposition
+with the lensing efficiency
+\begin{equation}
+G_B(\chi) = \int_{\mathrm{max}(\chi,\chi_B)}^{\chi_{B+1}}\dd\chi^\prime\:p(\chi^\prime)\frac{\dd z}{\dd\chi^\prime}\left(1-\frac{\chi^\prime}{\chi}\right).
+\end{equation}
+It is interesting to note that the effect of convergence and shear are fully analogous to the changes in size and shape due to direct tidal interaction, up to two details: A light bundle, consisting of photons as relativistic test particles for the gravitational potential, is deflected twice as strongly compared to nonrelativistic test particles such as the stars inside an elliptical galaxies, and the constant of proportionality that makes the gravitational potential dimensionless is $c^2$ in lensing instead of $\sigma^2$ for the intrinsic alignments. We will compute both lensing and intrinsic alignments from the dimensionless potential $\Phi/c^2$ and use a numerical value for the alignment parameter scaled by $c^2/\sigma^2$. Again, there is an analogous decomposition
 \begin{equation}
 \psi_{B,ij} = \kappa_B\sigma^{(0)}_{ij} + \gamma_{+,B}\sigma^{(1)}_{ij} +\gamma_{\times,B}\sigma^{(3)}_{ij}
 \end{equation}
@@ -194,7 +198,7 @@ and finally for their cross-correlation,
 C^{\varphi_A\psi_B}_{abij}(\ell) =
 \ell_a\ell_b\ell_i\ell_j\:\int\frac{\dd\chi}{\chi^2}\:W_{\varphi,A}(\chi)W_{\psi,B}(\chi)\:P_{\Phi\Phi}(k = \ell/\chi).
 \end{equation}
-
+In general, all lensing effects originating from a tidal gravitational field will have the opposite sign than the intrinsic tidal alignment, which causes the cross-correlation between lensing and intrinsic alignments to have a negative sign. This is taken care of numerically by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlation, which are proportional to $D^2$ and therefore positive.
 
 \spirou{add: Jeans-model}
 
@@ -227,7 +231,7 @@ N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar
 \end{equation}
 
 
-The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}. The negative cross-correlation between lensing and intrinsic alignments in taken care of by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlation, which are proportional to $D^2$ and therefore positive.
+The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}.
 
 
 \begin{figure}

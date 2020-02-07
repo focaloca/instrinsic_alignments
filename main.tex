@@ -96,7 +96,7 @@ Elliptical galaxies, on the other hand, are thought to acquire shape correlation
 
 While intrinsic alignments refer to a physical change of the appearance of the galaxies, there is an analogous deformation effect on the shape of the light bundle emanating from a galaxy by gravitational lensing. To lowest order, both effects depend on tidal gravitational field which suggests that the effects must be correlated. In fact, cross-correlations between the physical change in shape and the apparent change in shape are predicted to be nonzero for elliptical galaxies, and to be more exact, should in fact be negative as galaxies align themselves radially with a large structure while lensing generates a tangential alignment. As a result, ellipticity correlations of galaxies is a sum of the conventional weak lensing (referred to as GG), the intrinsic alignment (or II) and the cross-correlation between the two (called GI).
 
-There should be analogous effects of the size of an elliptical galaxy due to tidal gravitational fields: In gravitational lensing the light bundle can be isotropically enlarged, i.e. changed in size while the shape is conserved: This nonzero convergence is caused by the trace of the tidal shear field. Similarly, the size of an elliptical galaxy would physically change for a fixed velocity dispersion if the trace of the tidal shear field is nonzero, or equivalently, if it resides in an overdense or underdense region. An underdense region with density contrast $\delta < 0$ would source a gravitational potential $\Phi$ through the Poisson-equation $\Delta\Phi/c^2 = 3\Omega_m/(2\chi_H^2)\delta$, with the Hubble-distance $\chi_H = c/H_0$, such that the eigenvalues of $\partial_i\partial_j\Phi$ would be negative, stretching the galaxy to a larger size.
+There should be analogous effects of the size of an elliptical galaxy due to tidal gravitational fields: In gravitational lensing the light bundle can be isotropically enlarged, i.e. changed in size while the shape is conserved: This nonzero convergence is caused by the trace of the tidal shear field. Similarly, the size of an elliptical galaxy would physically change for a fixed velocity dispersion if the trace of the tidal shear field is nonzero, or equivalently, if it resides in an overdense or underdense region. An underdense region with density contrast $\delta < 0$ would source a gravitational potential $\Phi$ through the Poisson-equation $\Delta\Phi/c^2 = 3\Omega_m/(2\chi_H^2)\delta$, with the Hubble-distance $\chi_H = c/H_0$, such that the eigenvalues of $\partial_i\partial_j\Phi$ would be negative, stretching the galaxy to a physically larger size.
 
 The motivation of our paper are exactly these correlations between the sizes of elliptical galaxies as they would be predicted by a linear alignment model as a consequence of the trace $\Delta\Phi$ of the tidal shear tensor $\partial_i\partial_j\Phi$ being nonzero. These intrinsic size correlations would be generated in complete analogy to intrinsic shape correlations caused by the traceless part of the tidal shear, and would contaminate measurements of weak lensing convergence correlations in the same way as intrinsic shape correlations are a nuisance to the weak lensing shear.
 
@@ -285,6 +285,8 @@ N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar
 
 The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}.
 
+\spirou{describe shape correlations}
+
 
 \begin{figure}
 \centering
@@ -313,38 +315,38 @@ In the estimation process, there is a constant, diagonal noise contribution
 N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}
 \end{equation}
 
+It is straightforward to show that of the 21 possible spectra only 9 are in fact nonzero, and that they do form three pairs. Specifically, the cross-correlations $\bra\kappa\gamma_+^\prime\ket = 0$, $\bra\kappa\gamma_\times^\prime\ket = 0$ and $\bra\gamma_+\gamma_\times^\prime\ket = 0$ are zero as well as $\bra s\epsilon_+^\prime\ket = 0$, $\bra s\epsilon_\times^\prime\ket = 0$ and $\bra\epsilon_+\epsilon_\times^\prime\ket = 0$; likewise one gets vanishing cross-correlations $\bra s\gamma_+^\prime\ket = 0$, $\bra s\gamma_\times^\prime\ket = 0$, $\bra\kappa\epsilon_+^\prime\ket = 0$ and $\bra\kappa\epsilon_\times^\prime\ket = 0$ as well as $\bra\gamma_+\epsilon_\times^\prime\ket = 0$ and $\bra\gamma_\times\epsilon_+^\prime\ket = 0$. As consistency relations between the non-vanishing correlations one obtains $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$. Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. Similarly to the shape-spectra discussed in the previous section, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly.
 
-Fig.~\ref{fig:shapeshape} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. Similarly to the shape-spectra discussed in the previous section, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly.
+\spirou{describe size-correlations}
 
 
 \begin{figure}
 \centering
 %\includegraphics[scale=0.1]{wip.jpg}
 \caption{Size-size correlations as a function of multipole order $\ell$, i.e. with gravitational lensing $C_{AB}^{\gamma\gamma}(\ell)$, intrinsic shape correlations $C_{AB}^{\epsilon\epsilon}(\ell)$ and the cross correlation $C_{AB}^{\epsilon\gamma}(\ell)$, with the shape noise contribution $N_{AB}^\mathrm{shape}(\ell)$ in comparison, all for 5-bin tomography with the Euclid galaxy sample.}
-\label{fig:shapeshape}
+\label{fig:sizesize}
 \end{figure}
-
-
-\spirou{add: consistency relations}
-
-\spirou{add: cross-terms between shape and size are zero}
-
-\spirou{add: show proof, statistically isotropic fields}
-
-\spirou{add: total number of nonzero spectra}
 
 
 % --- section:  --- %
 \section{information content of shape and size correlations}\label{sect_fisher}
-
-\spirou{construction of the covariance}
-
-$$\varmathbb{C}=\begin{pmatrix}
-C_{ij}^{\gamma\gamma}+C_{ij}^{\epsilon\epsilon}+2C_{ij}^{\gamma\epsilon}+\frac{\sigma_{\epsilon^2}}{n} & C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s}   \\
-C_{ij}^{\gamma s}+C_{ij}^{\epsilon\kappa}+C_{ij}^{\gamma\kappa}+C_{ij}^{\epsilon s} & C_{ij}^{\kappa\kappa}+C_{ij}^{ss}+2C_{ij}^{\kappa s}+\frac{\sigma_{s^2}}{n}
-\end{pmatrix}$$
-
-The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the form
+For quantifying the information content of intrinsic size and shape correlations in comparison to weak lensing convergence and shear we use the Fisher-matrix formalism. Arranging the measurements of galaxy shapes and sizes into a data vector yields a data covariance matrix which is diagonal due to the vanishing cross-correlations between size and shape,
+\begin{equation}
+C =
+\left(
+\begin{array}{cc}
+C_\mathrm{shape}(\ell) & 0 \\
+0 & C_\mathrm{size}(\ell)
+\end{array}
+\right)
+\end{equation}
+with the entries corresponding to the shape and size correlations,
+\begin{equation}
+C_\mathrm{shape}(\ell) = C^{\epsilon\epsilon}_{AB}(\ell) + 2C^{\epsilon\gamma}_{AB}(\ell) + C^{\gamma\gamma}_{AB}(\ell) + N^\mathrm{shape}_{AB}(\ell)
+\quad\mathrm{and}\quad
+C_\mathrm{size}(\ell) = C^{ss}_{AB}(\ell) + 2C^{s\kappa}_{AB}(\ell) + C^{\kappa\kappa}_{AB}(\ell) + N^\mathrm{size}_{AB}(\ell)
+\end{equation}
+The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the generic form
 \begin{equation}
 F_{\mu\nu} = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)
 \end{equation}
@@ -353,13 +355,6 @@ where we implicitly assume a full sky coverage by having independent Fourier-mod
 \Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}SC^{-1}S\right),
 \end{equation}
 with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$.
-
-
-As the shape and size spectra are equal and carry the identical dependence on cosmological parameters, as they are essentially contractions of the same source terms for lensing, intrinsic alignments and their cross-correlations, the covariance matrix of the combined measurement is identical to that of an individual measurement with a rescaled noise term,
-\begin{equation}
-\frac{1}{\sigma^2_\mathrm{tot}} = \frac{1}{\sigma^2_\mathrm{shape}} + \frac{1}{\sigma^2_\mathrm{size}}.
-\end{equation}
-
 
 Fig.~\ref{fig:fisher} shows a constraints on a $w$CDM-cosmology from galaxy shapes and galaxy sizes.
 
@@ -370,14 +365,13 @@ Fig.~\ref{fig:fisher} shows a constraints on a $w$CDM-cosmology from galaxy shap
 \label{fig:fisher}
 \end{figure}
 
-
-Fig.~\ref{fig:fisher2} illustrates, how much information is added to the lensing data by including intrinsic alignments, again separated by galaxy shape spectra, size spectra and both combined.
+Fig.~\ref{fig:s2n} quantifies the signal to noise-ratio $\Sigma$ for measuring intrinsic shape and intrinsic size correlations.
 
 \begin{figure}
 \centering
 %\includegraphics[scale=0.1]{wip.jpg}
-\caption{Maringalised $1\sigma$-errors from the Fisher-matrix analysis on a standard $\Lambda$CDM-parameter set, separated by lensing, intrinsic alignments, and both combined, with a variable value of the alignment parameter $D$.}
-\label{fig:fisher2}
+\caption{Signal to noise-ratios $\Sigma$ for Euclid 5-bin tomography for measuring intrinsic shape and intrinsic size correlations in the presence of weak lensing.}
+\label{fig:s2n}
 \end{figure}
 
 

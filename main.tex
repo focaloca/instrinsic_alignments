@@ -318,7 +318,11 @@ In the estimation process, there is a constant, diagonal noise contribution
 N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}
 \end{equation}
 
-It is straightforward to show that of the 21 possible spectra 17 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$. The vanishing four correlations involve cross-correlations of tensorial fields between different modes, i.e. $\bra\gamma_+\gamma_\times^\prime\ket$, $\bra\epsilon_+\epsilon_\times^\prime\ket$, $\bra\gamma_+\epsilon_\times^\prime\ket$ and $\bra\gamma_\times\epsilon_+^\prime\ket$.
+It is straightforward to show that of the 21 possible spectra 17 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$. 
+
+\spirou{why do these consistencies hold}
+
+The vanishing four correlations involve cross-correlations of tensorial fields between different modes, i.e. $\bra\gamma_+\gamma_\times^\prime\ket$, $\bra\epsilon_+\epsilon_\times^\prime\ket$, $\bra\gamma_+\epsilon_\times^\prime\ket$ and $\bra\gamma_\times\epsilon_+^\prime\ket$.
 
 Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. Similarly to the shape-spectra discussed in the previous section, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly.
 
@@ -335,18 +339,28 @@ Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they 
 
 Finally, we compute the cross-correlations between galaxy shapes and sizes, for lensing
 \begin{equation}
-C_{AB}^{\kappa\gamma}(\ell) = \frac{1}{4}\left(\sigma^{(0)}_{ab}\right)C^{\psi_A\psi_B}_{abij}(\ell)
+C_{AB}^{\kappa\gamma}(\ell) = 
+\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\psi_A\psi_B}_{abij}(\ell)
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
-C_{AB}^{s\epsilon}(\ell) = \frac{1}{4}\left(\sigma^{(0)}_{ab}\right)C^{\varphi_A\varphi_B}_{abij}(\ell)
+C_{AB}^{s\epsilon}(\ell) = 
+\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\varphi_A\varphi_B}_{abij}(\ell)
 \end{equation}
 and for the cross-correlation between lensing and alignments,
 \begin{align}
-C_{AB}^{\kappa\epsilon}(\ell) & = \frac{1}{4}\left(\sigma^{(0)}_{ab}\right)C^{\psi_A\varphi_B}_{abij}(\ell)\\
-C_{AB}^{s\gamma}(\ell) & = \frac{1}{4}\left(\sigma^{(0)}_{ab}\right)C^{\psi_A\varphi_B}_{abij}(\ell)
+C_{AB}^{\kappa\epsilon}(\ell) & = 
+\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\psi_A\varphi_B}_{abij}(\ell)\\
+C_{AB}^{s\gamma}(\ell) & = 
+\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
+C^{\psi_A\varphi_B}_{abij}(\ell)
 \end{align}
 where due to the independence of the errors in the shape and size correlations one does not have to deal with a noise contribution when estimating spectra. We plot the cross-spectra between galaxy shapes and sizes in Fig.~\ref{fig:sizeshape}, separated by extrinsic and intrinsic tidal fields.
+
+\spirou{why are the cross-correlations nonzero}
 
 \spirou{describe cross-correlations}
 

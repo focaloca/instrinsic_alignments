@@ -6,403 +6,6 @@ Reallocated field_info (elt_size=4) to 10103 items from 5000.
 Database file #1: references.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Abbott:2017wau
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in Abbott:2017wau
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Abbott:2017wau
-while executing---line 1822 of file mnras.bst
-Warning--empty year in alsing_weak_2014
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry alsing_weak_2014
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in alsing_weak_2014
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry alsing_weak_2014
-while executing---line 1822 of file mnras.bst
-Warning--empty year in altay_influence_2006
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry altay_influence_2006
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry altay_influence_2006
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry altay_influence_2006
-while executing---line 1822 of file mnras.bst
-Warning--empty year in amara_optimal_2007
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry amara_optimal_2007
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry amara_optimal_2007
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry amara_optimal_2007
-while executing---line 1822 of file mnras.bst
-Warning--empty year in amendola_measuring_2008
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry amendola_measuring_2008
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry amendola_measuring_2008
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry amendola_measuring_2008
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Amendola:2016saw
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in Amendola:2016saw
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry Amendola:2016saw
-while executing---line 1822 of file mnras.bst
-Warning--empty year in ayaita_investigating_2012
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry ayaita_investigating_2012
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry ayaita_investigating_2012
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry ayaita_investigating_2012
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bailin_internal_2005
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bailin_internal_2005
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bailin_internal_2005
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bailin_internal_2005
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bartelmann_gravitational_2010
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bartelmann_gravitational_2010
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in bartelmann_gravitational_2010
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bartelmann_gravitational_2010
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bartelmann_topical_2010
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bartelmann_topical_2010
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bartelmann_topical_2010
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bartelmann_topical_2010
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bartelmann_weak_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bartelmann_weak_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in bartelmann_weak_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bartelmann_weak_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bate_when_2019
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bate_when_2019
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bate_when_2019
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bate_when_2019
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bernardeau_full-sky_2010
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernardeau_full-sky_2010
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bernardeau_full-sky_2010
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernardeau_full-sky_2010
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bernstein_comprehensive_2009
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernstein_comprehensive_2009
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bernstein_comprehensive_2009
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernstein_comprehensive_2009
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bernstein_dark_2004
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernstein_dark_2004
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bernstein_dark_2004
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernstein_dark_2004
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bernstein_shapes_2002
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernstein_shapes_2002
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bernstein_shapes_2002
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bernstein_shapes_2002
-while executing---line 1822 of file mnras.bst
-Warning--empty year in blazek_beyond_2017
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry blazek_beyond_2017
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in blazek_beyond_2017
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry blazek_beyond_2017
-while executing---line 1822 of file mnras.bst
-Warning--empty year in blazek_separating_2012
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry blazek_separating_2012
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in blazek_separating_2012
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry blazek_separating_2012
-while executing---line 1822 of file mnras.bst
-Warning--empty year in brainerd_weak_1996
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry brainerd_weak_1996
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry brainerd_weak_1996
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry brainerd_weak_1996
-while executing---line 1822 of file mnras.bst
-Warning--empty year in bridle_dark_2007
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bridle_dark_2007
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry bridle_dark_2007
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry bridle_dark_2007
-while executing---line 1822 of file mnras.bst
-Warning--empty year in brown_measurement_2002
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry brown_measurement_2002
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry brown_measurement_2002
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry brown_measurement_2002
-while executing---line 1822 of file mnras.bst
-Warning--empty year in capranico_intrinsic_2013
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry capranico_intrinsic_2013
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry capranico_intrinsic_2013
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry capranico_intrinsic_2013
-while executing---line 1822 of file mnras.bst
-Warning--empty year in casarini_non-linear_2011
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry casarini_non-linear_2011
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry casarini_non-linear_2011
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry casarini_non-linear_2011
-while executing---line 1822 of file mnras.bst
-Warning--empty year in casarini_tomographic_2012
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry casarini_tomographic_2012
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry casarini_tomographic_2012
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry casarini_tomographic_2012
-while executing---line 1822 of file mnras.bst
-Warning--empty year in catelan_intrinsic_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry catelan_intrinsic_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in catelan_intrinsic_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry catelan_intrinsic_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty year in chang_dark_2017
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chang_dark_2017
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in chang_dark_2017
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chang_dark_2017
-while executing---line 1822 of file mnras.bst
-Warning--empty year in chisari_cosmological_2013
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_cosmological_2013
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry chisari_cosmological_2013
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_cosmological_2013
-while executing---line 1822 of file mnras.bst
-Warning--empty year in chisari_intrinsic_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_intrinsic_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in chisari_intrinsic_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_intrinsic_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty year in chisari_intrinsic_2014
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_intrinsic_2014
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry chisari_intrinsic_2014
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_intrinsic_2014
-while executing---line 1822 of file mnras.bst
-Warning--empty year in chisari_contamination_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_contamination_2015
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry chisari_contamination_2015
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_contamination_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty year in chisari_redshift_2016
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_redshift_2016
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry chisari_redshift_2016
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry chisari_redshift_2016
-while executing---line 1822 of file mnras.bst
-Warning--empty year in codis_galaxy_2018
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry codis_galaxy_2018
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in codis_galaxy_2018
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry codis_galaxy_2018
-while executing---line 1822 of file mnras.bst
-Warning--empty year in codis_spin_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry codis_spin_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in codis_spin_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry codis_spin_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty year in codis_intrinsic_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry codis_intrinsic_2015
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry codis_intrinsic_2015
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry codis_intrinsic_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty year in cooray_weak_2002
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_weak_2002
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry cooray_weak_2002
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_weak_2002
-while executing---line 1822 of file mnras.bst
-Warning--empty year in cooray_weak_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_weak_2001
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry cooray_weak_2001
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_weak_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty year in cooray_power_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_power_2001
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry cooray_power_2001
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_power_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty year in cooray_second-order_2002
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_second-order_2002
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry cooray_second-order_2002
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry cooray_second-order_2002
-while executing---line 1822 of file mnras.bst
-Warning--empty year in crittenden_spin-induced_2001
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry crittenden_spin-induced_2001
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry crittenden_spin-induced_2001
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry crittenden_spin-induced_2001
-while executing---line 1822 of file mnras.bst
-Warning--empty year in debattista_internal_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry debattista_internal_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in debattista_internal_2015
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry debattista_internal_2015
-while executing---line 1822 of file mnras.bst
-Warning--empty year in dodelson_weak_2005
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry dodelson_weak_2005
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry dodelson_weak_2005
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry dodelson_weak_2005
-while executing---line 1822 of file mnras.bst
-Warning--empty year in dossett_figures_2011
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry dossett_figures_2011
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in dossett_figures_2011
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry dossett_figures_2011
-while executing---line 1822 of file mnras.bst
-Warning--empty year in douspis_tension_2019
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry douspis_tension_2019
-while executing---line 1822 of file mnras.bst
-Warning--empty journal in douspis_tension_2019
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry douspis_tension_2019
-while executing---line 1822 of file mnras.bst
-Warning--empty year in dubinski_cosmological_1992
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry dubinski_cosmological_1992
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry dubinski_cosmological_1992
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry dubinski_cosmological_1992
-while executing---line 1822 of file mnras.bst
-Warning--empty year in fan_intrinsic_2007
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry fan_intrinsic_2007
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry fan_intrinsic_2007
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry fan_intrinsic_2007
-while executing---line 1822 of file mnras.bst
-Warning--empty year in fang_fast-pt_2017
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry fang_fast-pt_2017
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry fang_fast-pt_2017
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry fang_fast-pt_2017
-while executing---line 1822 of file mnras.bst
 Warning--empty year in forero-romero_cosmic_2014
 "ArXiv e-prints" is a string literal, `journal' is a missing field
 ---they aren't the same literal types for entry forero-romero_cosmic_2014
@@ -1612,15 +1215,6 @@ while executing---line 1822 of file mnras.bst
 "ArXiv e-prints" is a string literal, `journal' is a missing field
 ---they aren't the same literal types for entry zhang_spin_2015
 while executing---line 1822 of file mnras.bst
-Warning--empty year in de_jong_kilo-degree_2013
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry de_jong_kilo-degree_2013
-while executing---line 1822 of file mnras.bst
-`journal' is a missing field, not a string, for entry de_jong_kilo-degree_2013
-while executing---line 1822 of file mnras.bst
-"ArXiv e-prints" is a string literal, `journal' is a missing field
----they aren't the same literal types for entry de_jong_kilo-degree_2013
-while executing---line 1822 of file mnras.bst
 Warning--empty year in van_waerbeke_efficiency_1999
 "ArXiv e-prints" is a string literal, `journal' is a missing field
 ---they aren't the same literal types for entry van_waerbeke_efficiency_1999
@@ -1631,43 +1225,43 @@ Warning--empty journal in van_waerbeke_efficiency_1999
 while executing---line 1822 of file mnras.bst
 You've used 189 entries,
             2881 wiz_defined-function locations,
-            1811 strings with 47475 characters,
-and the built_in function-call counts, 91146 in all, are:
-= -- 6930
-> -- 7616
+            1850 strings with 47791 characters,
+and the built_in function-call counts, 91142 in all, are:
+= -- 7138
+> -- 7387
 < -- 515
-+ -- 3862
++ -- 3627
 - -- 1010
-* -- 11187
-:= -- 14725
+* -- 11083
+:= -- 14668
 add.period$ -- 0
 call.type$ -- 189
 change.case$ -- 378
-chr.to.int$ -- 138
-cite$ -- 424
-duplicate$ -- 4242
-empty$ -- 4148
+chr.to.int$ -- 144
+cite$ -- 364
+duplicate$ -- 4245
+empty$ -- 4162
 format.name$ -- 1668
-if$ -- 15012
-int.to.chr$ -- 52
+if$ -- 15226
+int.to.chr$ -- 46
 int.to.str$ -- 0
 missing$ -- 189
 newline$ -- 580
 num.names$ -- 1386
-pop$ -- 1514
+pop$ -- 1338
 preamble$ -- 1
 purify$ -- 756
 quote$ -- 0
-skip$ -- 2000
+skip$ -- 2137
 stack$ -- 0
-substring$ -- 4645
-swap$ -- 2271
+substring$ -- 4904
+swap$ -- 2265
 text.length$ -- 760
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1701
-warning$ -- 235
-while$ -- 1385
+warning$ -- 175
+while$ -- 1405
 width$ -- 0
-write$ -- 1627
-(There were 508 error messages)
+write$ -- 1695
+(There were 382 error messages)

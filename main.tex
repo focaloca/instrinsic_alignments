@@ -366,20 +366,25 @@ For quantifying the information content of intrinsic size and shape correlations
 C =
 \left(
 \begin{array}{cc}
-C^\mathrm{shape}_{AB}(\ell) & C^\mathrm{cross}_{AB^\prime}(\ell) \\
-C^\mathrm{cross}_{A^\prime B}(\ell) & C^\mathrm{size}_{A^\prime B^\prime}(\ell)
+C^{\epsilon\epsilon}_{AB}(\ell) + 2C^{\epsilon\gamma}_{AB}(\ell) + C^{\gamma\gamma}_{AB}(\ell) + N^\mathrm{shape}_{AB}(\ell) & 
+C^{s\epsilon}_{AB^\prime}(\ell) + C^{s\gamma}_{AB^\prime}(\ell) + C^{\kappa\epsilon}_{AB^\prime}(\ell) + C^{\kappa\gamma}_{AB^\prime}(\ell) \\
+C^{s\epsilon}_{A^\prime B}(\ell) + C^{s\gamma}_{A^\prime B}(\ell) + C^{\kappa\epsilon}_{A^\prime B}(\ell) + C^{\kappa\gamma}_{A^\prime B}(\ell) & 
+C^{ss}_{A^\prime B^\prime}(\ell) + 2C^{s\kappa}_{A^\prime B^\prime}(\ell) + C^{\kappa\kappa}_{A^\prime B^\prime}(\ell) + N^\mathrm{size}_{A^\prime B^\prime}(\ell)
 \end{array}
 \right)
 \end{equation}
-with the entries corresponding to the shape and size correlations,
-\begin{align}
-C^\mathrm{shape}_{AB}(\ell) & = C^{\epsilon\epsilon}_{AB}(\ell) + 2C^{\epsilon\gamma}_{AB}(\ell) + C^{\gamma\gamma}_{AB}(\ell) + N^\mathrm{shape}_{AB}(\ell),\\
-C^\mathrm{size}_{AB}(\ell) & = C^{ss}_{AB}(\ell) + 2C^{s\kappa}_{AB}(\ell) + C^{\kappa\kappa}_{AB}(\ell) + N^\mathrm{size}_{AB}(\ell),
-\end{align}
-as well as the cross-correlation between size and shape,
+Given the similarities between the shape and size correlations allows to rewrite the covariance matrix as
 \begin{equation}
-C^\mathrm{cross}_{AB}(\ell) = C^{s\epsilon}_{AB}(\ell) + C^{s\gamma}_{AB}(\ell) + C^{\kappa\epsilon}_{AB}(\ell) + C^{\kappa\gamma}_{AB}(\ell).
+C = \left(
+\begin{array}{cc}
+\frac{\ell^4}{4}\left(C^{\varphi_A\varphi_B}(\ell)+2C^{\varphi_A\psi_B}(\ell)+C^{\psi_A\psi_B}(\ell)\right) + N^\mathrm{shape}_{AB} & 
+\frac{\ell^4}{4}\left(C^{\varphi_A\varphi_{B^\prime}}(\ell)+2C^{\varphi_A\psi_{B^\prime}}(\ell)+C^{\psi_A\psi_{B^\prime}}(\ell)\right)\\
+\frac{\ell^4}{4}\left(C^{\varphi_{A^\prime}\varphi_B}(\ell)+2C^{\varphi_{A^\prime}\psi_B}(\ell)+C^{\psi_{A^\prime}\psi_B}(\ell)\right) & 
+\frac{\ell^4}{4}\left(C^{\varphi_{A^\prime}\varphi_{B^\prime}}(\ell)+2C^{\varphi_{A^\prime}\psi_{B^\prime}}(\ell)+C^{\psi_{A^\prime}\psi_{B^\prime}}(\ell)\right) + N^\mathrm{size}_{A^\prime B^\prime}(\ell)
+\end{array}
+\right)
 \end{equation}
+
 The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the generic form
 \begin{equation}
 F_{\mu\nu} = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)

@@ -266,40 +266,38 @@ and finally for their cross-correlation,
 C^{\varphi_A\psi_B}_{abij}(\ell) =
 \ell_a\ell_b\ell_i\ell_j\:\int\frac{\dd\chi}{\chi^2}\:W_{\varphi,A}(\chi)W_{\psi,B}(\chi)\:P_{\Phi\Phi}(k = \ell/\chi).
 \end{equation}
-In general, all lensing effects originating from a tidal gravitational field will have the opposite sign than the intrinsic tidal alignment, which causes the cross-correlation between lensing and intrinsic alignments to have a negative sign. This is taken care of numerically by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlations: Those are proportional to $D^2$ and therefore positive.
+In general, all lensing effects originating from a tidal gravitational field will have the opposite sign than the intrinsic tidal alignment, which causes the cross-correlation between lensing and intrinsic alignments to have a negative sign. This is taken care of numerically by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlations: Those are proportional to $D^2$ and therefore positive. In analogy we define the angular spectra $C^{\varphi_A\varphi_B}(\ell)$, $C^{\psi_A\psi_B}(\ell)$ and $C^{\varphi_A\psi_B}(\ell)$ of the potentials $\varphi_A$ and  $\psi_B$.
 
 
 % --- section:  --- %
 \section{Angular spectra of galaxy shapes and sizes}\label{sect_spectra}
-The prefactors $l_al_b$ appearing in the expressions for the spectra of the projected tidal shears can be compactly written by introducing polar coordinates, $l_0 = l\cos(\phi)$ and $l_1 = l\sin(\phi)$. Then,
+The prefactors $\ell_a\ell_b$ appearing in the expressions for the spectra of the projected tidal shears can be compactly written by introducing polar coordinates, $\ell_0 = \ell\cos(\phi)$ and $\ell_1 = \ell\sin(\phi)$. Then,
 \begin{equation}
-l_al_b = 
-\frac{l^2}{2}\left(\sigma^{(0)}_{ab} + (\cos^2(\phi)-\sin^2(\phi))\sigma^{(1)}_{ab} + 2\sin(\phi)\cos(\phi)\sigma^{(3)}_{ab}\right) = 
-\frac{l^2}{2}\left(\sigma^{(0)}_{ab} + \cos(2\phi)\sigma^{(1)}_{ab} + \sin(2\phi)\sigma^{(3)}_{ab}\right),
+\ell_a\ell_b = 
+\frac{\ell^2}{2}\left(\sigma^{(0)}_{ab} + (\cos^2(\phi)-\sin^2(\phi))\sigma^{(1)}_{ab} + 2\sin(\phi)\cos(\phi)\sigma^{(3)}_{ab}\right) = 
+\frac{\ell^2}{2}\left(\sigma^{(0)}_{ab} + \cos(2\phi)\sigma^{(1)}_{ab} + \sin(2\phi)\sigma^{(3)}_{ab}\right),
 \end{equation}
-recovering the fact that the phase angle rotates twice as fast as the coordinate system. Now, the decomposition with Pauli-matrices makes it possible to write down all ellipticity spectra as contractions of the the possible spectra of the source terms, for lensing,
+recovering the fact that the phase angle rotates twice as fast as the coordinate system. We are going to make the choice $\phi = 0$ by a suitable rotation of the coordinate frame, such that there are no contractions with $\sigma^{(3)}_{ab}$, and correspondingly no nonvanishing $\gamma_\times$ or $\epsilon_\times$. This corresponds effectively to the computation of $E$- and $B$-modes of the shear field and of the ellipticity field, with
+\begin{align}
+e(\vecl) = &\hphantom{-}\cos(2\phi)\gamma_+(\vecl) + \sin(2\phi)\gamma_\times(\vecl),\\
+b(\vecl) = &-\sin(2\phi)\gamma_+(\vecl) + \cos(2\phi)\gamma_\times(\vecl),
+\end{align}
+where in our model there are no $B$-modes due to the index exchange symmetry. Now, the decomposition with Pauli-matrices makes it possible to write down all ellipticity spectra as contractions of the the possible spectra of the source terms, for lensing,
 \begin{equation}
-C^{\gamma\gamma}_{AB}(\ell) = \frac{1}{4}
-\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\psi_A\psi_B}_{abij}(\ell),
+C^{\gamma\gamma}_{AB}(\ell) = \frac{1}{4}\sigma^{(1)}_{ab}\sigma^{(1)}_{ij}C^{\psi_A\psi_B}_{abij}(\ell) = \frac{l^4}{4}C^{\psi_A\psi_B}(\ell),
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
-C^{\epsilon\epsilon}_{AB}(\ell) = \frac{1}{4}
-\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\varphi_A\varphi_B}_{abij}(\ell),
+C^{\epsilon\epsilon}_{AB}(\ell) = \frac{1}{4}\sigma^{(1)}_{ab}\sigma^{(1)}_{ij}C^{\varphi_A\varphi_B}_{abij}(\ell) = \frac{l^4}{4}C^{\varphi_A\varphi_B}(\ell),
 \end{equation}
 and for the cross-correlation between the two,
 \begin{equation}
-C^{\epsilon\gamma}_{AB}(\ell) = \frac{1}{4}
-\left(\sigma^{(1)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(3)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\varphi_A\psi_B}_{abij}(\ell).
+C^{\epsilon\gamma}_{AB}(\ell) = \frac{1}{4}\sigma^{(1)}_{ab}\sigma^{(1)}_{ij}C^{\varphi_A\psi_B}_{abij}(\ell) = \frac{l^4}{4}C^{\varphi_A\psi_B}(\ell).
 \end{equation}
-As scalars, they are independent from the choice of coordinate system. A measurement of the shape correlations is limited by a Poissonian shape noise contribution,
+A measurement of the shape correlations is limited by a Poissonian shape noise contribution,
 \begin{equation}
 N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}.
 \end{equation}
-
 
 The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}.
 
@@ -315,28 +313,22 @@ The extrinsic and intrinsic shape spectra are shown for a tomographic survey in 
 
 In a similar manner like in the previous section, one obtains the size spectra from contracting the possible spectra of the source terms, for lensing,
 \begin{equation}
-C^{\kappa\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\psi_A\psi_B}_{abij}(\ell),
+C^{\kappa\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\psi_A\psi_B}_{abij}(\ell) = \frac{\ell^4}{4}C^{\psi_A\psi_B}(\ell),
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
-C^{s\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\varphi_A\psi_B}_{abij}(\ell),
+C^{ss}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\varphi_A\varphi_B}_{abij}(\ell) = \frac{\ell^4}{4}C^{\varphi_A\varphi_B}(\ell),
 \end{equation}
 and again, for the cross-correlation between the two,
 \begin{equation}
-C^{ss}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\varphi_A\varphi_B}_{abij}(\ell).
+C^{s\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\varphi_A\psi_B}_{abij}(\ell) = \frac{\ell^4}{4}C^{\varphi_A\psi_B}(\ell).
 \end{equation}
 In the estimation process, there is a constant, diagonal noise contribution
 \begin{equation}
 N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}
 \end{equation}
 
-It is straightforward to show that of the 21 possible spectra 17 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$. Those are shown straightforward from the 
-
-\spirou{why do these consistencies hold}
-
-The vanishing four correlations involve cross-correlations of tensorial fields between different modes, i.e. $\bra\gamma_+\gamma_\times^\prime\ket$, $\bra\epsilon_+\epsilon_\times^\prime\ket$, $\bra\gamma_+\epsilon_\times^\prime\ket$ and $\bra\gamma_\times\epsilon_+^\prime\ket$.
-
-Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. Similarly to the shape-spectra discussed in the previous section, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly.
+It is straightforward to show that of the 20 possible spectra 10 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$, in any coordinate frame. Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. Similarly to the shape-spectra discussed in the previous section, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly.
 
 \spirou{describe size-correlations}
 
@@ -351,38 +343,20 @@ Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they 
 
 Finally, we compute the cross-correlations between galaxy shapes and sizes, for lensing
 \begin{equation}
-C_{AB}^{\kappa\gamma}(\ell) = 
-\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\psi_A\psi_B}_{abij}(\ell)
+C_{AB}^{\kappa\gamma}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(1)}_{ij}C^{\psi_A\psi_B}_{abij}(\ell) = \frac{l^4}{4}C^{\psi\psi_B}(\ell)
 \end{equation}
 for intrinsic alignments,
 \begin{equation}
-C_{AB}^{s\epsilon}(\ell) = 
-\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\varphi_A\varphi_B}_{abij}(\ell)
+C_{AB}^{s\epsilon}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(1)}_{ij}C^{\varphi_A\varphi_B}_{abij}(\ell) = \frac{\ell^4}{4}C^{\varphi_A\varphi_B}(\ell)
 \end{equation}
 and for the cross-correlation between lensing and alignments,
 \begin{align}
-C_{AB}^{\kappa\epsilon}(\ell) & = 
-\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\psi_A\varphi_B}_{abij}(\ell)\\
-C_{AB}^{s\gamma}(\ell) & = 
-\frac{1}{4}\left(\sigma^{(0)}_{ab}\sigma^{(1)}_{ij} + \sigma^{(0)}_{ab}\sigma^{(3)}_{ij}\right)
-C^{\psi_A\varphi_B}_{abij}(\ell)
+C_{AB}^{\kappa\epsilon}(\ell) & = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(1)}_{ij}C^{\psi_A\varphi_B}_{abij}(\ell) = \frac{\ell^4}{4}C^{\psi_A\varphi_B}(\ell)\\
+C_{AB}^{s\gamma}(\ell) & = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(1)}_{ij}C^{\psi_A\varphi_B}_{abij}(\ell) = \frac{\ell^4}{4}C^{\varphi_A\psi_B}(\ell),
 \end{align}
-where due to the independence of the errors in the shape and size correlations one does not have to deal with a noise contribution when estimating spectra. We plot the cross-spectra between galaxy shapes and sizes in Fig.~\ref{fig:sizeshape}, separated by extrinsic and intrinsic tidal fields.
-
-\spirou{why are the cross-correlations nonzero}
+where due to the independence of the errors in the shape and size correlations one does not have to deal with a noise contribution when estimating spectra.
 
 \spirou{describe cross-correlations}
-
-
-\begin{figure}
-\centering
-%\includegraphics[scale=0.1]{wip.jpg}
-\caption{Size-shape cross-correlations as a function of multipole $\ell$, i.e. with gravitational lensing $C_{AB}^{\kappa\gamma}(\ell)$, intrinsic shape correlations $C_{AB}^{s\epsilon}(\ell)$ and the two possible cross-correlation $C_{AB}^{\kappa\epsilon}(\ell)$ and $C_{AB}^{s\gamma}(\ell)$, again for 5-bin tomography with the Euclid galaxy sample.}
-\label{fig:sizeshape}
-\end{figure}
 
 
 % --- section:  --- %

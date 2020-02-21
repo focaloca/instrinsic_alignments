@@ -366,10 +366,10 @@ For quantifying the information content of intrinsic size and shape correlations
 C =
 \left(
 \begin{array}{cc}
-C^{\epsilon\epsilon}_{AB}(\ell) + 2C^{\epsilon\gamma}_{AB}(\ell) + C^{\gamma\gamma}_{AB}(\ell) + N^\mathrm{shape}_{AB}(\ell) & 
+C^{\epsilon\epsilon}_{AB}(\ell) + 2C^{\epsilon\gamma}_{AB}(\ell) + C^{\gamma\gamma}_{AB}(\ell) + N^\mathrm{shape}_{AB} & 
 C^{s\epsilon}_{AB^\prime}(\ell) + C^{s\gamma}_{AB^\prime}(\ell) + C^{\kappa\epsilon}_{AB^\prime}(\ell) + C^{\kappa\gamma}_{AB^\prime}(\ell) \\
 C^{s\epsilon}_{A^\prime B}(\ell) + C^{s\gamma}_{A^\prime B}(\ell) + C^{\kappa\epsilon}_{A^\prime B}(\ell) + C^{\kappa\gamma}_{A^\prime B}(\ell) & 
-C^{ss}_{A^\prime B^\prime}(\ell) + 2C^{s\kappa}_{A^\prime B^\prime}(\ell) + C^{\kappa\kappa}_{A^\prime B^\prime}(\ell) + N^\mathrm{size}_{A^\prime B^\prime}(\ell)
+C^{ss}_{A^\prime B^\prime}(\ell) + 2C^{s\kappa}_{A^\prime B^\prime}(\ell) + C^{\kappa\kappa}_{A^\prime B^\prime}(\ell) + N^\mathrm{size}_{A^\prime B^\prime}
 \end{array}
 \right)
 \end{equation}
@@ -380,7 +380,7 @@ C = \left(
 \frac{\ell^4}{4}\left(C^{\varphi_A\varphi_B}(\ell)+2C^{\varphi_A\psi_B}(\ell)+C^{\psi_A\psi_B}(\ell)\right) + N^\mathrm{shape}_{AB} & 
 \frac{\ell^4}{4}\left(C^{\varphi_A\varphi_{B^\prime}}(\ell)+2C^{\varphi_A\psi_{B^\prime}}(\ell)+C^{\psi_A\psi_{B^\prime}}(\ell)\right)\\
 \frac{\ell^4}{4}\left(C^{\varphi_{A^\prime}\varphi_B}(\ell)+2C^{\varphi_{A^\prime}\psi_B}(\ell)+C^{\psi_{A^\prime}\psi_B}(\ell)\right) & 
-\frac{\ell^4}{4}\left(C^{\varphi_{A^\prime}\varphi_{B^\prime}}(\ell)+2C^{\varphi_{A^\prime}\psi_{B^\prime}}(\ell)+C^{\psi_{A^\prime}\psi_{B^\prime}}(\ell)\right) + N^\mathrm{size}_{A^\prime B^\prime}(\ell)
+\frac{\ell^4}{4}\left(C^{\varphi_{A^\prime}\varphi_{B^\prime}}(\ell)+2C^{\varphi_{A^\prime}\psi_{B^\prime}}(\ell)+C^{\psi_{A^\prime}\psi_{B^\prime}}(\ell)\right) + N^\mathrm{size}_{A^\prime B^\prime}
 \end{array}
 \right),
 \end{equation}
@@ -394,23 +394,23 @@ where we implicitly assume a full sky coverage by having independent Fourier-mod
 \begin{equation}
 \Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}SC^{-1}S\right),
 \end{equation}
-with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$.
+with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$, and we are assuming a full-sky coverage for simplicity with no correlations between different multipoles, but scale down the signal subsequently with a sky coverage of $f_\mathrm{sky}=0.3$, which would be justified because most of the signal originates at small angular scales.
 
 Fig.~\ref{fig:fisher} shows a constraints on a $w$CDM-cosmology from galaxy shapes and galaxy sizes.
 
 \begin{figure}
 \centering
 %\includegraphics[scale=0.1]{wip.jpg}
-\caption{Marginalised $1\sigma$-contours from the Fisher-matrix analysis on a standard $\Lambda$CDM-parameter set, separated by shape correlations, size correlations, and both combined, with a fixed value of the alignment parameter $D$.}
+\caption{Marginalised $1\sigma$-contours from the Fisher-matrix analysis on a standard $\Lambda$CDM-parameter set, separated by shape correlations and size correlations, with a fixed value of the alignment parameter $D$.}
 \label{fig:fisher}
 \end{figure}
 
-Fig.~\ref{fig:s2n} quantifies the signal to noise-ratio $\Sigma$ for measuring intrinsic shape and intrinsic size correlations.
+Fig.~\ref{fig:s2n} quantifies the signal to noise-ratio $\Sigma$ for measuring intrinsic shape and intrinsic size correlations: We compute the signal to noise-ratio for a measurement of the $II$ and $GI$-terms 
 
 \begin{figure}
 \centering
 %\includegraphics[scale=0.1]{wip.jpg}
-\caption{Signal to noise-ratios $\Sigma$ for Euclid 5-bin tomography for measuring intrinsic shape and intrinsic size correlations in the presence of weak lensing.}
+\caption{Signal to noise-ratios $\Sigma$ for Euclid 5-bin tomography for measuring intrinsic shape correlations and for intrinsic size correlations in the presence of weak lensing}
 \label{fig:s2n}
 \end{figure}
 

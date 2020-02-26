@@ -127,12 +127,12 @@ For this perturbed stellar component one can compute the change of the second mo
 \end{equation}
 which bears a resemblance to the generalised Hooke-law $\Delta q_{cd} = S_{abcd}\Phi_{ab}$, relating the stresses $\Phi_{ab}$ to the observable strains $\Delta q_{cd}$, which suggests to think of $S_{abcd}$ as the susceptibility of a galaxy to change its shape or size under the influence of tidal gravitational fields. In the theory of elastic media one would then in fact use index symmetries to derive that there must be two material constants, similarly, in the theory of viscous fluids one defines two Lam{\'e}-viscosity coefficients (bulk and shear viscosity), so naturally the question arises whether the same constant of proportionality determines the size and the shape deformation as in the case of lensing.
 
-After introducing polar coordinates, assuming spherical symmetry for the unperturbed galaxy and writing $r_0=r\cos(\phi)$ and $r_1=r\sin(\phi)$ for the vector components, the elasticity tensor is in our case given by
+After introducing polar coordinates, assuming spherical symmetry for the unperturbed galaxy and writing $r_0=r\cos\phi$ and $r_1=r\sin\phi$ for the vector components, the elasticity tensor is in our case given by
 \begin{equation}
 S_{abcd} = 
-\frac{1}{2\sigma^2}\int\dd r\:r^5\rho(r)\int\dd\phi\:\cos^{4-(a+b+c+d}(\phi)\sin^{a+b+c+d}(\phi),
+\frac{1}{2\sigma^2}\int\dd r\:r^5\rho(r)\int\dd\phi\:\cos^{4-(a+b+c+d}\phi\sin^{a+b+c+d}\phi,
 \end{equation}
-has 16 entries and is fully symmetric under index exchange. Absorbing the prefactor $\int\dd r\:r^5\rho(r)/(2\sigma^2)$ into an alignment parameter $D$, $S_{abcd}$ can only assume five different values, namely $S_{0000} = \int\dd\phi\:\cos^4(\phi) = S_{1111} = \int\dd\phi\:\sin^4(\phi) = 3\pi/4$, $S_{0001} = \int\dd\phi\:\cos^3(\phi)\sin(\phi) = S_{1110} = \int\dd\phi\:\cos(\phi)\sin^3(\phi) = 0$ and $S_{0011} = \int\dd\phi\:\cos^2(\phi)\sin^2(\phi) = \pi/4$. 
+has 16 entries and is fully symmetric under index exchange. Absorbing the prefactor $\int\dd r\:r^5\rho(r)/(2\sigma^2)$ into an alignment parameter $D$, $S_{abcd}$ can only assume three different values, namely $S_{0000} = \int\dd\phi\:\cos^4\phi = S_{1111} = \int\dd\phi\:\sin^4\phi = 3\pi/4$, $S_{0001} = \int\dd\phi\:\cos^3\phi\sin\phi = S_{1110} = \int\dd\phi\:\cos\phi\sin^3\phi = 0$ and $S_{0011} = \int\dd\phi\:\cos^2\phi\sin^2\phi = \pi/4$. 
 
 Introducing the four Pauli-matrices $\sigma^{(n)}_{ab}$ as the basis for the tidal shear $\partial_a\partial_b\Phi$,
 \begin{equation}
@@ -196,8 +196,11 @@ With many galaxies in a tomographic bin $A$ with a suitable, normalised redshift
 \varphi_{A,ab} = \partial_a\partial_b\varphi_A
 \quad\mathrm{with}\quad
 \varphi_A = D\int\dd\chi\:p_A(z(\chi))\frac{\dd z}{\dd\chi}\frac{D_+}{a}\:\Phi = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
+\label{eqn_ia_los}
 \end{equation}
 with the Hubble-function $H(\chi)/c = \dd z/\dd\chi$ which originates from the transformation of the redshift distribution, and the growth rate $D_+/a$ of gravitational potentials, and the alignment parameter $D$, which encapsulates the proportionality between tidal shear and physical shape and size change. It would reflect the brightness distribution of a galaxy through its forth moments and scale inversely with the velocity dispersion $\sigma^2$. Because linear intrinsic alignments have the opposite sign compared to gravitational lensing in the same gravitational potential, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly. This is due to the fact that an overdense region enlarges the image of a galaxy in lensing but compresses a galaxy physically.
+
+Equation~(\ref{eqn_ia_los}) can be amended to include a bias model, as the galaxy density traces the dark matter density not perfectly. As the intrinsic shape and size-spectra correspond to ellipticity- and diameter-weighted galaxy correlation functions, a biasing model would in fact matter and can change the dependence between the observables and the tidal shear as a function of scale or redshift. For simplicity, we work with a bias of unity without any dependence on mass or redshift, which is reasonable for low-mass galaxies in the relevant redshift range \citep{sheth_large-scale_1999}. Modelling the statistics of the intrinsic alignment effects from a Gaussian random field as we do subsequently ignores that the galaxy shapes and sizes provide a measurement of the tidal field restricted to peak regions of the large-scale structure, which influences the statistics of tidal fields \citep{peacock_statistics_1985, schafer_galactic_2012}.
 
 The angular derivatives $\partial_a$ are related to the spatial derivatives $\partial_x$ through $\partial_a = \chi\partial_x$, with $x=\theta\chi$ in the small-angle approximation. From that, one can recover the ellipticity components $\epsilon_{+,A}$ and $\epsilon_{\times,A}$ as well as the size $s_A$ from a decomposition of the tensor $\varphi_{A,ab}$ with the Pauli-matrices $\sigma_{ab}^{(n)}$,
 \begin{equation}
@@ -238,9 +241,9 @@ The intrinsic size field provides a measure of the projected density in the same
 \begin{equation}
 s = 
 \frac{1}{2}\varphi_{ab}\sigma^{(0)}_{ab} = 
-\frac{1}{2}\sigma^{(0)}_{ab}\partial_a\partial_b\int\dd\chi\: p(\chi)\frac{D_+}{a}\Phi = 
-\frac{1}{2}\int\dd\chi\:p(\chi)\frac{D_+}{a}\chi^2\Delta\Phi = 
-\frac{3\Omega_m}{4\chi_H^2}\int\dd\chi\:p(\chi)\chi^2 \frac{D_+}{a}\delta,
+\frac{D}{2}\sigma^{(0)}_{ab}\partial_a\partial_b\int\dd\chi\: p(\chi)\frac{D_+}{a}\Phi = 
+\frac{D}{2}\int\dd\chi\:p(\chi)\frac{D_+}{a}\chi^2\Delta\Phi = 
+\frac{3\Omega_m}{4\chi_H^2}D\int\dd\chi\:p(\chi)\chi^2 \frac{D_+}{a}\delta,
 \end{equation}
 by substituting the Poisson-equation $\Delta\Phi = 3\Omega_m/(2\chi_H^2)\delta$, using $\partial_a = \chi\partial_x$ for the derivatives, and approximating the full Laplacian by the one containing the derivatives perpendicular to the line of sight. Again, one recognises a factor of two between the gravitational acceleration of photons in gravitational lensing and non-relativistic particles as in our case of stars inside an elliptical galaxy.
 
@@ -273,10 +276,10 @@ In general, all lensing effects originating from a tidal gravitational field wil
 
 % --- section:  --- %
 \section{Angular spectra of galaxy shapes and sizes}\label{sect_spectra}
-The prefactors $\ell_a\ell_b$ appearing in the expressions for the spectra of the projected tidal shears can be compactly written by introducing polar coordinates, $\ell_0 = \ell\cos(\phi)$ and $\ell_1 = \ell\sin(\phi)$. Then,
+The prefactors $\ell_a\ell_b$ appearing in the expressions for the spectra of the projected tidal shears can be compactly written by introducing polar coordinates, $\ell_0 = \ell\cos\phi$ and $\ell_1 = \ell\sin\phi$. Then,
 \begin{equation}
 \ell_a\ell_b = 
-\frac{\ell^2}{2}\left(\sigma^{(0)}_{ab} + (\cos^2(\phi)-\sin^2(\phi))\sigma^{(1)}_{ab} + 2\sin(\phi)\cos(\phi)\sigma^{(3)}_{ab}\right) = 
+\frac{\ell^2}{2}\left(\sigma^{(0)}_{ab} + (\cos^2\phi-\sin^2\phi)\sigma^{(1)}_{ab} + 2\sin\phi\cos\phi\sigma^{(3)}_{ab}\right) = 
 \frac{\ell^2}{2}\left(\sigma^{(0)}_{ab} + \cos(2\phi)\sigma^{(1)}_{ab} + \sin(2\phi)\sigma^{(3)}_{ab}\right),
 \end{equation}
 recovering the fact that the phase angle rotates twice as fast as the coordinate system. We are going to make the choice $\phi = 0$ by a suitable rotation of the coordinate frame, such that there are no contractions with $\sigma^{(3)}_{ab}$, and correspondingly vanishing $\gamma_\times$ or $\epsilon_\times$. This corresponds effectively to the computation of $E$- and $B$-modes of the shear field and of the ellipticity field, with
@@ -394,7 +397,7 @@ where we implicitly assume a full sky coverage by having independent Fourier-mod
 \begin{equation}
 \Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}SC^{-1}S\right),
 \end{equation}
-with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$, and we are assuming a full-sky coverage for simplicity with no correlations between different multipoles, but scale down the signal subsequently with a sky coverage of $f_\mathrm{sky}=0.3$, which would be justified because most of the signal originates at small angular scales.
+with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$, and we are assuming for simplicity a full-sky coverage with no correlations between different multipoles, but scale down the signal subsequently with a sky coverage of $f_\mathrm{sky}=0.3$ typical for Euclid, which would be justified because most of the signal originates at small angular scales.
 
 Fig.~\ref{fig:fisher} shows constraints on a $w$CDM-cosmology from galaxy shapes and galaxy sizes.
 
@@ -437,7 +440,7 @@ spin:\citep{bailin_internal_2005,dubinski_cosmological_1992,goldberg_spins_1967,
 
 % --- section: acknowledgements --- %
 \section*{Acknowledgements}
-BG thanks...   BMS likes to thank the Universidad del Valle in Cali, Colombia, for their kind hospitality.
+BG thanks...   BMS likes to thank the Universidad del Valle in Cali, Colombia, for their kind hospitality. We thank Jolanta Zjupa for spotting a mistake in an early version of the draft.
 
 
 % --- bibliography --- %

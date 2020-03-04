@@ -187,18 +187,17 @@ i.e. the changes in shape are only half as large as the change in size, analogou
 \rho(r) \propto \exp\left(-b(n)\left[\left(\frac{r}{r_0}\right)^{1/n}+1\right]\right),
 \label{eqn_sersic}
 \end{equation}
-it is possible to derive the scaling of ellipticity induced by the action of a tidal gravitational field, dominantly with the size of the galaxy but also on the Sersic-index $n$. In eqn.~(\ref{eqn_sersic}), $r_0$ is the scale radius of the stellar component, and $b(n)\simeq 2n - 1/3$, approximatively. Computing the relevant integral $\int\dd r\:r^5\rho(r)$ for a properly normalised density distribution $\int\dd^2r\:\rho(r) = 2\pi\int\dd r\:r\rho(r) = 1$ and using the definition of ellipticity $\epsilon$ as it would result from the second moments $Q_{cd}$ of the normalised brightness distribution $I(r)$,
+it is possible to derive the scaling of ellipticity induced by the action of a tidal gravitational field, dominantly with the size of the galaxy but also on the Sersic-index $n$. In eqn.~(\ref{eqn_sersic}), $r_0$ is the scale radius of the stellar component, and $b(n)\simeq 2n - 1/3$, approximatively. Computing the relevant integral $\int\dd r\:r^5\rho(r)$ for a properly normalised density distribution $\int\dd^2r\:\rho(r) = 2\pi\int\dd r\:r\rho(r) = 1$ and using the definition of ellipticity $\epsilon$ as it would result from the second moments $Q_{ab}$ of the normalised brightness distribution $I(r)$,
 \begin{equation}
 \epsilon = \frac{Q_{xx}-Q_{yy}}{Q_{xx}+Q_{yy}} + 2\ci\frac{Q_{xy}}{Q_{xx}+Q_{yy}},
 \quad\mathrm{with}\quad
-Q_{cd} = \int\dd^2 r\:I(r)\:r_c r_d,
+Q_{ab} = \int\dd^2 r\:I(r)\:r_a r_b,
 \end{equation}
-where one recognises the size of the image in the denominator, $Q_{xx}+Q_{yy} = \int\dd^2r\:\rho(r)(x^2+y^2) = 2\pi\int\dd r\:r^3\rho$, it is possible to show the scaling of the ellipticity
+where one recognises the size of the image in the denominator, $Q_{xx}+Q_{yy} = \int\dd^2r\:\rho(r)(x^2+y^2) = 2\pi\int\dd r\:r^3\rho$, it is possible to show the scaling of the ellipticity to be
 \begin{equation}
-\epsilon \propto
+\epsilon \propto \frac{\int\dd r\:r^5\rho(r)}{\int\dd r\:r^3\rho(r)} = r_0^2\frac{\int\dd x\:\left(\frac{x}{b}+1\right)^5\exp(-x)}{\int\dd x\:\left(\frac{x}{b}+1\right)^3\exp(-x)},
 \end{equation}
-
-The results are shown in Fig.~\ref{fig_sersic_scaling}, which indicates a strong scaling of the alignment parameter with increasing Sersic-index $n$, where we should note that we consider the Sersic-profile as a reasonably simple model for the stellar distribution, which is not consistent with a constant velocity dispersion $\sigma^2$, and neither a gravitating self-consistent solution. Rather, it is supposed to illustrate how the internal dynamics of an elliptical galaxy can impact on the magnitude of tidal alignment.
+obtained after substitution $x = b\left[(r/r_0)^{1/b}-1\right]$, where the ratio of integrals has in general only a numerical solution and shows the dependence of the susceptibility to shape change due to tidal forces caused by the distribution of the stars inside the galaxy. The dominant scaling of ellipticity with the size $r_0^2$ of the galaxy is dimensionally consistent with the linear tidal shear model $Q_{ab} = S_{abcd}\partial_c\partial_d\Phi$. The results are shown in Fig.~\ref{fig_sersic_scaling}, which indicates a strong scaling of the alignment parameter with increasing Sersic-index $n$, where we should note that we consider the Sersic-profile as a reasonably simple model for the stellar distribution, which is not consistent with a constant velocity dispersion $\sigma^2$, and neither a gravitating self-consistent solution. Rather, it is supposed to illustrate that the internal dynamics of an elliptical galaxy can impact on the magnitude of tidal alignment and that not all elliptical galaxies should have the same alignment parameter if their Sersic-index varies.
 
 \begin{figure}
 \centering

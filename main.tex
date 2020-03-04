@@ -76,7 +76,7 @@ $^2$Zentrum f{\"u}r Astronomie der Universit{\"a}t Heidelberg, Astronomisches Re
 
 % --- abstract --- %
 \begin{abstract}
-The subject of this paper are shape and size correlations of galaxies due to weak gravitational lensing and due to direct tidal interaction of elliptical galaxies with gravitational fields sourced by the cosmic large-scale structure. Setting up a linear intrinsic alignment model that is able to predict intrinsic shape and size correlations in a consistent way we compute the spectra of the intrinsic correlations as well as of the cross-correlations between intrinsic shapes and sizes with weak gravitational shear and convergence, juxtaposing both types of spectra with extrinsic shapes and sizes correlations caused by lensing. We quantify the observability of the intrinsic shape and size correlations and estimate with the Fisher-formalism how well the alignment parameter can be determined from the Euclid weak lensing survey. Specifically, we find a contamination of the weak lensing convergence spectra with an intrinsic size correlation amounting to \spirou{add number}\% over a wide multipole range $\ell=30\ldots300$, with a corresponding cross-correlation exhibiting a sign change, similar to the cross-correlation between weak lensing shear and intrinsic shapes. Quantifying the information content of size correlations in addition to shape correlations shows that bounds can be improved by \spirou{add number}\% for a $w$CDM-cosmology, and that intrinsic correlations decrease the sensitivity of weak lensing due to the negative sign of the cross-correlations by \spirou{add number}. A determination of the alignment parameter yields an precision of $\sigma_D=$\spirou{add number} forecasted for Euclid.
+The subject of this paper are shape and size correlations of galaxies due to weak gravitational lensing and due to direct tidal interaction of elliptical galaxies with gravitational fields sourced by the cosmic large-scale structure. Setting up a linear intrinsic alignment model that is able to predict intrinsic shape and size correlations in a consistent way we compute the spectra of the intrinsic correlations as well as of the cross-correlations between intrinsic shapes and sizes with weak gravitational shear and convergence, juxtaposing both types of spectra with extrinsic shapes and sizes correlations caused by lensing. We quantify the observability of the intrinsic shape and size correlations and estimate with the Fisher-formalism how well the alignment parameter can be determined from the Euclid weak lensing survey. Specifically, we find a contamination of the weak lensing convergence spectra with an intrinsic size correlation amounting to \spirou{add number}\% over a wide multipole range $\ell=30\ldots300$, with a corresponding cross-correlation exhibiting a sign change, similar to the cross-correlation between weak lensing shear and intrinsic shapes. Quantifying the information content of size correlations in addition to shape correlations shows that bounds can be improved by \spirou{add number}\% for a $w$CDM-cosmology, and that intrinsic correlations decrease the sensitivity of weak lensing due to the negative sign of the cross-correlations by \spirou{add number}. A determination of the alignment parameter yields a precision of $\sigma_D=$\spirou{add number} forecasted for Euclid.
 \end{abstract}
 
 
@@ -327,8 +327,9 @@ C^{\epsilon\gamma}_{AB}(\ell) = \frac{1}{4}\sigma^{(1)}_{ab}\sigma^{(1)}_{ij}C^{
 \end{equation}
 A measurement of the shape correlations is limited by a Poissonian shape noise contribution,
 \begin{equation}
-N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}.
+N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB},
 \end{equation}
+with a value of $\sigma_\mathrm{shape} = 0.4$ and the number density $\bar{n} = 4.727\times 10^8$ galaxies per steradian.
 
 The extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}.
 
@@ -356,8 +357,9 @@ C^{s\kappa}_{AB}(\ell) = \frac{1}{4}\sigma^{(0)}_{ab}\sigma^{(0)}_{ij}C^{\varphi
 \end{equation}
 i.e. all size-spectra are equal to their shape-counterparts. In the estimation process, there is a constant, diagonal noise contribution
 \begin{equation}
-N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB}
+N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{n}}\delta_{AB},
 \end{equation}
+with the size noise $\sigma_\mathrm{size} = 0.8$.
 
 It is straightforward to show that of the 20 possible spectra 10 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$, in any coordinate frame. Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey.
 
@@ -419,7 +421,7 @@ The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the generic form
 \begin{equation}
 F_{\mu\nu} = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)
 \end{equation}
-where we implicitly assume a full sky coverage by having independent Fourier-modes, but scale down the Fisher-matrix with the fraction $f_\mathrm{sky} = 0.5$ for the Euclid survey. Similarly, we define the signal to noise ratio $\Sigma$,
+where we implicitly assume a full sky coverage by having independent Fourier-modes. Similarly, we define the signal to noise ratio $\Sigma$,
 \begin{equation}
 \Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}SC^{-1}S\right),
 \end{equation}

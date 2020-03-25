@@ -2,48 +2,49 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: mnras.bst
-Reallocated field_info (elt_size=4) to 10103 items from 5000.
 Database file #1: references.bib
+Warning--I didn't find a database entry for ""
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 189 entries,
+You've used 142 entries,
             2881 wiz_defined-function locations,
-            1932 strings with 48914 characters,
-and the built_in function-call counts, 90234 in all, are:
-= -- 7601
-> -- 6646
-< -- 519
-+ -- 2902
-- -- 986
-* -- 10656
-:= -- 14347
+            1643 strings with 40221 characters,
+and the built_in function-call counts, 67201 in all, are:
+= -- 5634
+> -- 4959
+< -- 388
++ -- 2185
+- -- 724
+* -- 7937
+:= -- 10674
 add.period$ -- 0
-call.type$ -- 189
-change.case$ -- 378
-chr.to.int$ -- 181
-cite$ -- 189
-duplicate$ -- 4271
-empty$ -- 4188
-format.name$ -- 1656
-if$ -- 15679
-int.to.chr$ -- 9
+call.type$ -- 142
+change.case$ -- 284
+chr.to.int$ -- 136
+cite$ -- 142
+duplicate$ -- 3200
+empty$ -- 3141
+format.name$ -- 1244
+if$ -- 11657
+int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 189
-newline$ -- 580
-num.names$ -- 1382
-pop$ -- 811
+missing$ -- 142
+newline$ -- 439
+num.names$ -- 1028
+pop$ -- 616
 preamble$ -- 1
-purify$ -- 756
+purify$ -- 568
 quote$ -- 0
-skip$ -- 2615
+skip$ -- 1955
 stack$ -- 0
-substring$ -- 5432
-swap$ -- 2269
-text.length$ -- 759
+substring$ -- 3972
+swap$ -- 1678
+text.length$ -- 570
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1701
+type$ -- 1278
 warning$ -- 0
-while$ -- 1452
+while$ -- 1080
 width$ -- 0
-write$ -- 1890
+write$ -- 1420
+(There was 1 warning)

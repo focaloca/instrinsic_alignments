@@ -297,11 +297,11 @@ and finally for their cross-correlation,
 C^{\varphi_A\psi_B}_{abij}(\ell) =
 \ell_a\ell_b\ell_i\ell_j\:\int\frac{\dd\chi}{\chi^2}\:W_{\varphi,A}(\chi)W_{\psi,B}(\chi)\:P_{\Phi\Phi}(k = \ell/\chi).
 \end{equation}
-In general, all lensing effects originating from a tidal gravitational field will have the opposite sign than the intrinsic tidal alignment, which causes the cross-correlation between lensing and intrinsic alignments to have a negative sign. This is taken care of numerically by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlations: Those are proportional to $D^2$ and therefore positive. In analogy we define the angular spectra $C^{\varphi_A\varphi_B}(\ell)$, $C^{\psi_A\psi_B}(\ell)$ and $C^{\varphi_A\psi_B}(\ell)$ of the potentials $\varphi_A$ and  $\psi_B$. For the spectrum of the gravitational potential we use a linear spectrum of the form $P_{\Phi\Phi}(k)\propto k^{n_s-4}T^2(k)$ with a transfer function $T(k)$ and a nonlinear extension on small scales \citep{cooray_power_2001, huterer_calibrating_2005}, normalised to $\sigma_8$, but assume Gaussian statistics throughout. We apply a smoothing,
+In general, all lensing effects originating from a tidal gravitational field will have the opposite sign than the intrinsic tidal alignment, which causes the cross-correlation between lensing and intrinsic alignments to have a negative sign. This is taken care of numerically by choosing a negative value for the alignment parameter $D$, which does not affect the auto-correlations: Those are proportional to $D^2$ and therefore positive. In analogy we define the angular spectra $C^{\varphi_A\varphi_B}(\ell)$, $C^{\psi_A\psi_B}(\ell)$ and $C^{\varphi_A\psi_B}(\ell)$ of the potentials $\varphi_A$ and  $\psi_B$. For the spectrum of the gravitational potential we use a linear spectrum of the form $P_{\Phi\Phi}(k)\propto k^{n_s-4}T^2(k)$ with a transfer function $T(k)$ and a nonlinear extension on small scales \citep{cooray_power_2001, huterer_calibrating_2005}, normalised to $\sigma_8$, but assume Gaussian statistics throughout. We apply a smoothing on a scale defined through $M = 4\pi/3\:\Omega_m\rho_\mathrm{crit}R^3$, $\rho_\mathrm{crit} = 3H_0^2/(8\pi G)$, 
 \begin{equation}
-P_{\Phi\Phi}(k) \rightarrow P_{\Phi\Phi}(k)\exp\left(-(kR)^2\right),
+\Phi(k) \rightarrow \Phi(k)\exp\left(-\frac{(kR)^2}{2}\right),
 \end{equation}
-on a scale defined through $M = 4\pi/3\:\Omega_m\rho_\mathrm{crit}R^3$ to the spectrum used for intrinsic alignments, where we set the mass scale to be $M=10^{12}M_\odot/h$: In doing this we can control how close size- and shape-correlations trace the tidal shear field, and select the long-wavelength modes.
+to the potential used for intrinsic alignments, where we set the mass scale to be $M=10^{12}M_\odot/h$: In doing this we can control how close size- and shape-correlations trace the tidal shear field, and select the relevant long-wavelength modes.
 
 
 % --- section:  --- %
@@ -335,12 +335,12 @@ N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar
 \end{equation}
 with a value of $\sigma_\mathrm{shape} = 0.4$ and the number density $\bar{n} = 4.727\times 10^8$ galaxies per steradian typical for Euclid-studies. It is straightforward to show that of the 20 possible spectra 10 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$, in any coordinate frame.
 
-The resulting extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}: Intrinsic shape correlations are relevant at intermediate multipoles, but are surpassed by more than an order of magnitude by weak lensing-induced shape correlations, for realistic values of the alignment parameter $D$. Intrinsic and extrinsic shapes are anticorrelated, and the cross-correlation is modulating the spectra over much wider multipole ranges.
+The resulting extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}: Intrinsic shape correlations are relevant at intermediate multipoles, but are surpassed by more than three orders of magnitude by weak lensing-induced shape correlations, for realistic values of the alignment parameter $D$. Intrinsic and extrinsic shapes are anti-correlated, and the cross-correlation is modulating the spectra over much wider multipole ranges. In fulfilment of the Cauchy-Schwarz-inequality, the cross-correlation has values between the pure lensing and intrinsic alignment effect.
 
 \begin{figure}
 \centering
-%\includegraphics[scale=0.1]{wip.jpg}
-\caption{Shape-shape correlations as a function of multipole order $\ell$, separated by gravitational lensing $C_{AB}^{\kappa}(\ell)$, intrinsic size correlations $C_{AB}^{ss}(\ell)$ and the cross-correlation $C_{AB}^{s\kappa}(\ell)$, with the Poissonian noise contribution $N_{AB}^\mathrm{size}(\ell)$ in comparison, for Euclid's redshift distribution and tomography with 5 bins.}
+\includegraphics[scale=0.45]{./figures/ia_spectrum.pdf}
+\caption{Shape-shape correlations as a function of multipole order $\ell$, separated by gravitational lensing $C_{AB}^{\kappa}(\ell)$, intrinsic size correlations $C_{AB}^{ss}(\ell)$ and the cross-correlation $C_{AB}^{s\kappa}(\ell)$ (of which we show the absolute value), with the Poissonian noise contribution $N_{AB}^\mathrm{size}(\ell)$ in comparison, for Euclid's redshift distribution and tomography with 5 bins, for an alignment parameter $D=-3\times10^{-4}$ and a mass scale $M = 10^{12}M_\odot/h$. Dashed and solid lines indicate a linear and nonlinear spectrum, respectively.}
 \label{fig:shapeshape}
 \end{figure}
 
@@ -362,15 +362,7 @@ N_{AB}^\mathrm{size}(\ell) = \sigma^2_\mathrm{size} \frac{n_\mathrm{tomo}}{\bar{
 \end{equation}
 with the size noise $\sigma_\mathrm{size} = 0.8$.
 
-Fig.~\ref{fig:sizesize} shows the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. In fact, as a consequence of the linear alignment model and the linearity of weak lensing the size-correlations are identical to the shape correlations, including the anti-correlation between intrinsic and extrinsic size. The only difference between Figs.~\ref{fig:shapeshape} and~\ref{fig:sizesize} is in fact the varying amount of the Poissonian shape and size-noise. Given the fact that there is a higher uncertainty in the measurement of angular size in comparison to shape one can already now expect that the corresponding signal to noise-ratios for size-correlations are inferior to shapes. These statements rely on the fact that the same alignment parameter $D$ is relevant for both shapes and sizes, as teh linear alignment model would suggest.
-
-\begin{figure}
-\centering
-%\includegraphics[scale=0.1]{wip.jpg}
-\caption{Size-size correlations as a function of multipole order $\ell$, i.e. with gravitational lensing $C_{AB}^{\gamma\gamma}(\ell)$, intrinsic shape correlations $C_{AB}^{\epsilon\epsilon}(\ell)$ and the cross correlation $C_{AB}^{\epsilon\gamma}(\ell)$, with the shape noise contribution $N_{AB}^\mathrm{shape}(\ell)$ in comparison, all for 5-bin tomography with the Euclid galaxy sample.}
-\label{fig:sizesize}
-\end{figure}
-
+Fig.~\ref{fig:shapeshape} shows at the same time the intrinsic and extrinsic size-spectra, as they would result from a tomographic survey. In fact, as a consequence of the linear alignment model and the linearity of weak lensing the size-correlations are identical to the shape correlations, including the anti-correlation between intrinsic and extrinsic size. Given the fact that there is a slightly higher uncertainty in the measurement of angular size in comparison to shape one can already now expect that the corresponding signal to noise-ratios for size-correlations are slightly inferior to shapes. These statements rely on the fact that the same alignment parameter $D$ is relevant for both shapes and sizes, as the linear alignment model would suggest.
 
 Finally, we compute the cross-correlations between galaxy shapes and sizes, for lensing
 \begin{equation}
@@ -417,11 +409,11 @@ which is dangerously close to being singular, underlining the degeneracy between
 
 The Fisher-matrix $F_{\mu\nu}$ for a tomographic survey assumes the generic form
 \begin{equation}
-F_{\mu\nu} = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(\partial_\mu\ln C\:\partial_\nu\ln C\right)
+F_{\mu\nu} = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}\partial_\mu S\:C^{-1}\partial_\nu S\right)
 \end{equation}
 where we implicitly assume a full sky coverage by having independent Fourier-modes. Similarly, we define the signal to noise ratio $\Sigma$,
 \begin{equation}
-\Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}SC^{-1}S\right),
+\Sigma^2 = f_\mathrm{sky}\sum_\ell\frac{2\ell+1}{2}\mathrm{tr}\left(C^{-1}S\:C^{-1}S\right),
 \end{equation}
 with the noiseless spectrum $S(\ell)$ of which the signal strength is sought. For the case of Euclid, we extend the summation over the multipoles from $\ell=10$ to $\ell=3000$, and we are assuming for simplicity a full-sky coverage with no correlations between different multipoles, but scale down the signal subsequently with a sky coverage of $f_\mathrm{sky}=0.3$ typical for Euclid, which would be justified because most of the signal originates at small angular scales. The number density of galaxies $\bar{n}$, which determines the amplitude of the Poissonian shape and size noise term, is scaled by a typical fraction of $q=0.3$ of elliptical galaxies in the entire galaxy sample: This corresponds to pre-selecting only elliptical galaxies and to computing the shape- and size-correlations for those only. 
 
@@ -429,7 +421,7 @@ Fig.~\ref{fig:fisher} shows constraints on a $w$CDM-cosmology from galaxy shapes
 
 \begin{figure}
 \centering
-%\includegraphics[scale=0.1]{wip.jpg}
+\includegraphics[scale=0.45]{./figures/ia_spectrum.pdf}
 \caption{Marginalised $1\sigma$-contours from the Fisher-matrix analysis on a standard $\Lambda$CDM-parameter set, separated by $GG$, $GI$ and $II$-terms, for the shape correlations and the size correlations, with a fixed value of the alignment parameter $D$.}
 \label{fig:fisher}
 \end{figure}
@@ -438,8 +430,8 @@ Fig.~\ref{fig:s2n} quantifies the signal to noise-ratio $\Sigma$ for measuring i
 
 \begin{figure}
 \centering
-%\includegraphics[scale=0.1]{wip.jpg}
-\caption{Signal to noise-ratios $\Sigma$ for Euclid 5-bin tomography for measuring intrinsic shape correlations and for intrinsic size correlations in the presence of weak lensing}
+\includegraphics[scale=0.45]{./figures/ia_spectrum.pdf}
+\caption{Signal to noise-ratios $\Sigma$ for Euclid 5-bin tomography for measuring intrinsic shape correlations and for intrinsic size correlations in the presence of weak lensing.}
 \label{fig:s2n}
 \end{figure}
 

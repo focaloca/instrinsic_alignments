@@ -221,7 +221,7 @@ With many galaxies in a tomographic bin $A$ with a suitable, normalised redshift
 \begin{equation}
 \varphi_{A,ab} = \partial_a\partial_b\varphi_A
 \quad\mathrm{with}\quad
-\varphi_A = D\int\dd\chi\:p_A(z(\chi))\frac{\dd z}{\dd\chi}\frac{D_+}{a}\:\Phi = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
+\varphi_A = D\int\dd\chi\:p_A(z(\chi))\frac{\dd z}{\dd\chi}\frac{D_+}{a}\:\frac{\Phi}{\chi^2} = \int\dd\chi\:W_{\varphi,A}(\chi)\:\Phi,
 \label{eqn_ia_los}
 \end{equation}
 with the Hubble-function $H(\chi)/c = \dd z/\dd\chi$ which originates from the transformation of the redshift distribution, and the growth rate $D_+/a$ of gravitational potentials, and the alignment parameter $D$, which encapsulates the proportionality between tidal shear and physical shape and size change. It would reflect the brightness distribution of a galaxy through its forth moments and scale inversely with the velocity dispersion $\sigma^2$. Because linear intrinsic alignments have the opposite sign compared to gravitational lensing in the same gravitational potential, we choose a negative value for the alignment parameter $D$ in order to not having to carry through minus-signs explicitly. This is due to the fact that an overdense region enlarges the image of a galaxy in lensing but compresses a galaxy physically.
@@ -249,9 +249,9 @@ The approach above is motivated by the weak lensing shear $\gamma$, which result
 \end{equation}
 with the lensing efficiency
 \begin{equation}
-G_B(\chi) = \int_{\mathrm{max}(\chi,\chi_B)}^{\chi_{B+1}}\dd\chi^\prime\:p(\chi^\prime)\frac{\dd z}{\dd\chi^\prime}\left(1-\frac{\chi^\prime}{\chi}\right).
+G_B(\chi) = \int_{\mathrm{max}(\chi,\chi_B)}^{\chi_{B+1}}\dd\chi^\prime\:p(\chi^\prime)\frac{\dd z}{\dd\chi^\prime}\left(1-\frac{\chi}{\chi^\prime}\right).
 \end{equation}
-It is interesting to note that the effect of convergence and shear are fully analogous to the changes in size and shape due to direct tidal interaction, up to two details: A light bundle, consisting of photons as relativistic test particles for the gravitational potential, is deflected twice as strongly compared to nonrelativistic test particles such as the stars inside an elliptical galaxies, and the constant of proportionality that makes the gravitational potential dimensionless is $c^2$ in lensing instead of $\sigma^2$ for the intrinsic alignments. We will compute both lensing and intrinsic alignments from the dimensionless potential $\Phi$ give in units of $c^2$ and use a numerical value for the alignment parameter scaled by $c^2/\sigma^2$. Again, there is an analogous decomposition
+It is interesting to note that the effect of convergence and shear are fully analogous to the changes in size and shape due to direct tidal interaction, up to two details: A light bundle, consisting of photons as relativistic test particles for the gravitational potential, is deflected twice as strongly compared to non-relativistic test particles such as the stars inside an elliptical galaxies, and the constant of proportionality that makes the gravitational potential dimensionless is $c^2$ in lensing instead of $\sigma^2$ for the intrinsic alignments. We will compute both lensing and intrinsic alignments from the dimensionless potential $\Phi$ give in units of $c^2$ and use a numerical value for the alignment parameter scaled by $c^2/\sigma^2$. Again, there is an analogous decomposition
 \begin{equation}
 \psi_{B,ij} = \kappa_B\sigma^{(0)}_{ij} + \gamma_{+,B}\sigma^{(1)}_{ij} +\gamma_{\times,B}\sigma^{(3)}_{ij}
 \end{equation}
@@ -267,9 +267,9 @@ The intrinsic size field provides a measure of the projected density in the same
 \begin{equation}
 s = 
 \frac{1}{2}\varphi_{ab}\sigma^{(0)}_{ab} = 
-\frac{D}{2}\sigma^{(0)}_{ab}\partial_a\partial_b\int\dd\chi\: p(\chi)\frac{D_+}{a}\Phi = 
-\frac{D}{2}\int\dd\chi\:p(\chi)\frac{D_+}{a}\chi^2\Delta\Phi = 
-\frac{3\Omega_m}{4\chi_H^2}D\int\dd\chi\:p(\chi)\chi^2 \frac{D_+}{a}\delta,
+\frac{D}{2}\sigma^{(0)}_{ab}\partial_a\partial_b\int\dd\chi\: p(\chi)\frac{D_+}{a}\frac{\Phi}{\chi^2} = 
+\frac{D}{2}\int\dd\chi\:p(\chi)\frac{D_+}{a}\Delta\Phi = 
+\frac{3\Omega_m}{4\chi_H^2}D\int\dd\chi\:p(\chi)\frac{D_+}{a}\delta,
 \end{equation}
 by substituting the Poisson-equation $\Delta\Phi = 3\Omega_m/(2\chi_H^2)\delta$, using $\partial_a = \chi\partial_x$ for the derivatives, and approximating the full Laplacian by the one containing the derivatives perpendicular to the line of sight. Again, one recognises a factor of two between the gravitational acceleration of photons in gravitational lensing and non-relativistic particles as in our case of stars inside an elliptical galaxy. As discussed before, an actual measurement of the mean size $s$ of the galaxies into a certain direction would in addition be weighted with a biasing factor because the tidal shear field is only measurable at positions where galaxies exist: While the inclusion of a reasonably simple linear and deterministic biasing model is certainly possible and straightforward, we ignore this out of simplicity. 
 
@@ -335,12 +335,12 @@ N_{AB}^\mathrm{shape}(\ell) = \sigma^2_\mathrm{shape}\frac{n_\mathrm{tomo}}{\bar
 \end{equation}
 with a value of $\sigma_\mathrm{shape} = 0.4$ and the number density $\bar{n} = 4.727\times 10^8$ galaxies per steradian typical for Euclid-studies. It is straightforward to show that of the 20 possible spectra 10 are in fact nonzero, and that certain consistency relations hold, for instance $\bra\kappa\kappa^\prime\ket = \bra\gamma_+\gamma_+^\prime\ket + \bra\gamma_\times\gamma_\times^\prime\ket$ as well as $\bra ss^\prime\ket = \bra\epsilon_+\epsilon_+^\prime\ket + \bra\epsilon_\times\epsilon_\times^\prime\ket$, in any coordinate frame.
 
-The resulting extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}: Intrinsic shape correlations are relevant at intermediate multipoles, but are surpassed by more than three orders of magnitude by weak lensing-induced shape correlations, for realistic values of the alignment parameter $D$. Intrinsic and extrinsic shapes are anti-correlated, and the cross-correlation is modulating the spectra over much wider multipole ranges. In fulfilment of the Cauchy-Schwarz-inequality, the cross-correlation has values between the pure lensing and intrinsic alignment effect.
+The resulting extrinsic and intrinsic shape spectra are shown for a tomographic survey in Fig.~\ref{fig:shapeshape}: Intrinsic shape correlations are relevant at intermediate multipoles, but are surpassed by one to two orders of magnitude by weak lensing-induced shape correlations, for realistic values of the alignment parameter $D$. Intrinsic and extrinsic shapes are anti-correlated, and the cross-correlation is modulating the spectra over much wider multipole ranges. In fulfilment of the Cauchy-Schwarz-inequality, the cross-correlation has values between the pure lensing and intrinsic alignment effect. The alignment parameter $D$ was chosen to be $10^{-5}$, and scales proportional to $(c/\sigma)^2$, where $\sigma=10^5\mathrm{m}/\mathrm{s}$ would be a typical value for a Milky Way-sized object with $10^{12} M_\odot/h$: Increasing the velocity dispersion (where $\sigma\propto M^{1/3}$ due to the viral law) requires a larger alignment parameter $D$.
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.45]{./figures/ia_spectrum.pdf}
-\caption{Shape-shape correlations as a function of multipole order $\ell$, separated by gravitational lensing $C_{AB}^{\kappa}(\ell)$, intrinsic size correlations $C_{AB}^{ss}(\ell)$ and the cross-correlation $C_{AB}^{s\kappa}(\ell)$ (of which we show the absolute value), with the Poissonian noise contribution $N_{AB}^\mathrm{size}(\ell)$ in comparison, for Euclid's redshift distribution and tomography with 5 bins, for an alignment parameter $D=-3\times10^{-4}$ and a mass scale $M = 10^{12}M_\odot/h$. Dashed and solid lines indicate a linear and nonlinear spectrum, respectively.}
+\caption{Shape-shape correlations as a function of multipole order $\ell$, separated by gravitational lensing $C_{AB}^{\kappa}(\ell)$, intrinsic size correlations $C_{AB}^{ss}(\ell)$ and the cross-correlation $C_{AB}^{s\kappa}(\ell)$ (of which we show the absolute value), with the Poissonian noise contribution $N_{AB}^\mathrm{size}(\ell)$ in comparison, for Euclid's redshift distribution and tomography with 5 bins, for an alignment parameter $D=-10^{-5}$ and a mass scale $M = 10^{12}M_\odot/h$. Dashed and solid lines indicate a linear and nonlinear spectrum, respectively.}
 \label{fig:shapeshape}
 \end{figure}
 

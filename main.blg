@@ -3,48 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: mnras.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for ""
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 142 entries,
+You've used 132 entries,
             2881 wiz_defined-function locations,
-            1643 strings with 40221 characters,
-and the built_in function-call counts, 67201 in all, are:
-= -- 5634
-> -- 4959
-< -- 388
-+ -- 2185
-- -- 724
-* -- 7937
-:= -- 10674
+            1583 strings with 38309 characters,
+and the built_in function-call counts, 62277 in all, are:
+= -- 5242
+> -- 4567
+< -- 354
++ -- 2019
+- -- 660
+* -- 7351
+:= -- 9876
 add.period$ -- 0
-call.type$ -- 142
-change.case$ -- 284
-chr.to.int$ -- 136
-cite$ -- 142
-duplicate$ -- 3200
-empty$ -- 3141
-format.name$ -- 1244
-if$ -- 11657
+call.type$ -- 132
+change.case$ -- 264
+chr.to.int$ -- 126
+cite$ -- 132
+duplicate$ -- 2972
+empty$ -- 2921
+format.name$ -- 1136
+if$ -- 10807
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 142
-newline$ -- 439
-num.names$ -- 1028
-pop$ -- 616
+missing$ -- 132
+newline$ -- 409
+num.names$ -- 950
+pop$ -- 579
 preamble$ -- 1
-purify$ -- 568
+purify$ -- 528
 quote$ -- 0
-skip$ -- 1955
+skip$ -- 1812
 stack$ -- 0
-substring$ -- 3972
-swap$ -- 1678
-text.length$ -- 570
+substring$ -- 3716
+swap$ -- 1546
+text.length$ -- 530
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1278
+type$ -- 1188
 warning$ -- 0
-while$ -- 1080
+while$ -- 1000
 width$ -- 0
-write$ -- 1420
-(There was 1 warning)
+write$ -- 1320
